@@ -1,0 +1,318 @@
+{
+  "authorship": "AI_ASSISTED",
+  "claims_excluded": [
+    "generalization",
+    "improved_scientific_accuracy",
+    "full_87_example_training",
+    "large_model_training",
+    "GPU",
+    "multi_node",
+    "user_independent_competency"
+  ],
+  "config_sha256": "5646af441474857f99387c1282b38f3c83cd66aaaa443c3a0603a36e064804cf",
+  "data": {
+    "archive_sha256": "e1b3d2809470d1da0059df064be8e596167d15479d42b1f63fa5aaad7e31f531",
+    "config_sha256": "5646af441474857f99387c1282b38f3c83cd66aaaa443c3a0603a36e064804cf",
+    "counts": {
+      "4": {
+        "partition": "train",
+        "positive_labels": 1,
+        "samples": 4096
+      },
+      "6": {
+        "partition": "train",
+        "positive_labels": 0,
+        "samples": 4096
+      }
+    },
+    "sample_indices_sha256": "5d509ced5c38e8e4cfe1aa901bc79427dcce751fd93b1b9f68bc05db3a1143cf",
+    "schema_version": 1,
+    "source_sha256": {
+      "original_004_40kV.tiff": "fadd189a2397d474ed6d520e755518256e354f64cba92c5f100694e05aab9cab",
+      "original_004_40kV_mask.tiff": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+      "original_004_90kV.tiff": "f6d4559f067d6b528fe16e53a9aaaedb0467f2f59b828afb577c29f28830d122",
+      "original_004_90kV_mask.tiff": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+      "original_006_40kV.tiff": "79eb66bfc0e7d6acb0f483fd6f37c2312bdb04d3b9edea155d7a488461f48888",
+      "original_006_40kV_mask.tiff": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a",
+      "original_006_90kV.tiff": "77fe89e90b1ea38b249bf8d51e1c896aff4a7205912e3a89371475902e5f2dc1",
+      "original_006_90kV_mask.tiff": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a"
+    },
+    "status": "TRAIN_RESUBSTITUTION_ONLY_NOT_GENERALIZATION"
+  },
+  "gradient_check": {
+    "absolute_tolerance": 1e-06,
+    "data": "SYNTHETIC_ONLY",
+    "epsilon": 1e-06,
+    "max_absolute_error": 1.2256483848671618e-10,
+    "max_scaled_relative_error": 6.5518115574194024e-06,
+    "method": "central finite differences of all 145 parameters versus autograd, dropout disabled for deterministic differentiation",
+    "parameters_checked": 145,
+    "passed": true
+  },
+  "negative_checkpoint_tests": [
+    {
+      "case": "truncated_archive",
+      "exception": "FormatError",
+      "reason": "Archive SHA256 mismatch",
+      "rejected": true
+    },
+    {
+      "case": "corrupt_archive",
+      "exception": "FormatError",
+      "reason": "Archive SHA256 mismatch",
+      "rejected": true
+    },
+    {
+      "case": "wrong_hash",
+      "exception": "FormatError",
+      "reason": "Archive SHA256 mismatch",
+      "rejected": true
+    },
+    {
+      "case": "wrong_schema",
+      "exception": "FormatError",
+      "reason": "Checkpoint schema/version mismatch",
+      "rejected": true
+    },
+    {
+      "case": "wrong_config_binding",
+      "exception": "FormatError",
+      "reason": "Checkpoint binding mismatch",
+      "rejected": true
+    },
+    {
+      "case": "wrong_data_binding",
+      "exception": "FormatError",
+      "reason": "Checkpoint binding mismatch",
+      "rejected": true
+    },
+    {
+      "case": "optimizer_mismatch",
+      "exception": "FormatError",
+      "reason": "Runtime/optimizer mismatch",
+      "rejected": true
+    },
+    {
+      "case": "optimizer_boolean_type_alias",
+      "exception": "FormatError",
+      "reason": "Runtime/optimizer mismatch",
+      "rejected": true
+    },
+    {
+      "case": "inconsistent_step_cursor",
+      "exception": "FormatError",
+      "reason": "Progress consistency mismatch",
+      "rejected": true
+    },
+    {
+      "case": "invalid_sampler_rng",
+      "exception": "FormatError",
+      "reason": "Unexpected schema keys",
+      "rejected": true
+    },
+    {
+      "case": "duplicate_permutation_rehashed",
+      "exception": "FormatError",
+      "reason": "Invalid permutation",
+      "rejected": true
+    },
+    {
+      "case": "wrong_parameter_shape_rehashed",
+      "exception": "FormatError",
+      "reason": "Array shape/dtype mismatch",
+      "rejected": true
+    },
+    {
+      "case": "wrong_parameter_dtype_rehashed",
+      "exception": "FormatError",
+      "reason": "Array shape/dtype mismatch",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_parameter_rehashed",
+      "exception": "FormatError",
+      "reason": "Nonfinite array",
+      "rejected": true
+    },
+    {
+      "case": "duplicate_json_key",
+      "exception": "FormatError",
+      "reason": "Invalid JSON",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_json",
+      "exception": "FormatError",
+      "reason": "Invalid JSON",
+      "rejected": true
+    },
+    {
+      "case": "truncated_archive_rehashed",
+      "exception": "FormatError",
+      "reason": "Invalid NPZ archive",
+      "rejected": true
+    },
+    {
+      "case": "object_parameter_rehashed",
+      "exception": "FormatError",
+      "reason": "Array shape/dtype mismatch",
+      "rejected": true
+    },
+    {
+      "case": "oversized_decoded_archive_rehashed",
+      "exception": "FormatError",
+      "reason": "Archive exceeds size bound",
+      "rejected": true
+    },
+    {
+      "case": "oversized_json",
+      "exception": "FormatError",
+      "reason": "JSON exceeds size bound",
+      "rejected": true
+    }
+  ],
+  "parity": {
+    "all_checkpoint_metadata_exact_equal": true,
+    "loss_history_exact_equal": true,
+    "max_parameter_abs_diff": 0.0,
+    "max_prediction_abs_diff": 0.0,
+    "momentum_buffers_bitwise_equal": true,
+    "parameters_bitwise_equal": true,
+    "passed": true,
+    "predictions_bitwise_equal": true,
+    "progress_exact_equal": true,
+    "sampler_permutation_bitwise_equal": true,
+    "sampler_rng_exact_equal": true,
+    "steps": {
+      "full": 128,
+      "interrupted": 37,
+      "resumed_total": 128
+    },
+    "three_distinct_process_ids": true,
+    "torch_rng_bitwise_equal": true
+  },
+  "runs": {
+    "interrupted": {
+      "all_training_losses_finite": true,
+      "architecture": [
+        7,
+        16,
+        1
+      ],
+      "authorship": "AI_ASSISTED",
+      "device": "cpu",
+      "final_train_loss": 0.027949891582573244,
+      "initial_train_loss": 0.8330589737835608,
+      "metrics_scope": "8192 sampled training pixels, RESUBSTITUTION; not held-out/generalization",
+      "optimizer_steps_this_process": 37,
+      "optimizer_steps_total": 37,
+      "parameter_count": 145,
+      "pid": 10,
+      "positive_labels": 1,
+      "prediction_sha256": "f2ae28813a0760cc2f176e15965f9b19479f9c93369fc83eabd7a6a9c138cea5",
+      "process_peak_rss_kib": 287488,
+      "resumed_from_step": 0,
+      "run_process_cpu_seconds": 0.553179681,
+      "run_wall_seconds": 0.5532047859996965,
+      "runtime": {
+        "numpy": "2.3.5",
+        "python": "3.12.14",
+        "torch": "2.6.0+cpu"
+      },
+      "source_examples": 2,
+      "status": "TECHNICAL_TRAINING_SMOKE_ONLY",
+      "train_confusion": {
+        "FN": 1,
+        "FP": 0,
+        "TN": 8191,
+        "TP": 0
+      },
+      "train_samples": 8192,
+      "training_process_cpu_seconds": 0.016077550000000107,
+      "training_wall_seconds": 0.016082752000329492,
+      "user_competency": "NOT_ASSESSED"
+    },
+    "resumed": {
+      "all_training_losses_finite": true,
+      "architecture": [
+        7,
+        16,
+        1
+      ],
+      "authorship": "AI_ASSISTED",
+      "device": "cpu",
+      "final_train_loss": 0.005708238111065788,
+      "initial_train_loss": 0.8330589737835608,
+      "metrics_scope": "8192 sampled training pixels, RESUBSTITUTION; not held-out/generalization",
+      "optimizer_steps_this_process": 91,
+      "optimizer_steps_total": 128,
+      "parameter_count": 145,
+      "pid": 11,
+      "positive_labels": 1,
+      "prediction_sha256": "2f75f0411815448e456f8ed639c6a2ea5d6c33193ef613b79a5ab73b6fa5fc9e",
+      "process_peak_rss_kib": 287428,
+      "resumed_from_step": 37,
+      "run_process_cpu_seconds": 0.5721934160000002,
+      "run_wall_seconds": 0.5724716730001091,
+      "runtime": {
+        "numpy": "2.3.5",
+        "python": "3.12.14",
+        "torch": "2.6.0+cpu"
+      },
+      "source_examples": 2,
+      "status": "TECHNICAL_TRAINING_SMOKE_ONLY",
+      "train_confusion": {
+        "FN": 1,
+        "FP": 0,
+        "TN": 8191,
+        "TP": 0
+      },
+      "train_samples": 8192,
+      "training_process_cpu_seconds": 0.04282981600000002,
+      "training_wall_seconds": 0.04283491000023787,
+      "user_competency": "NOT_ASSESSED"
+    },
+    "uninterrupted": {
+      "all_training_losses_finite": true,
+      "architecture": [
+        7,
+        16,
+        1
+      ],
+      "authorship": "AI_ASSISTED",
+      "device": "cpu",
+      "final_train_loss": 0.005708238111065788,
+      "initial_train_loss": 0.8330589737835608,
+      "metrics_scope": "8192 sampled training pixels, RESUBSTITUTION; not held-out/generalization",
+      "optimizer_steps_this_process": 128,
+      "optimizer_steps_total": 128,
+      "parameter_count": 145,
+      "pid": 9,
+      "positive_labels": 1,
+      "prediction_sha256": "2f75f0411815448e456f8ed639c6a2ea5d6c33193ef613b79a5ab73b6fa5fc9e",
+      "process_peak_rss_kib": 287492,
+      "resumed_from_step": 0,
+      "run_process_cpu_seconds": 0.656356349,
+      "run_wall_seconds": 0.6564138940002522,
+      "runtime": {
+        "numpy": "2.3.5",
+        "python": "3.12.14",
+        "torch": "2.6.0+cpu"
+      },
+      "source_examples": 2,
+      "status": "TECHNICAL_TRAINING_SMOKE_ONLY",
+      "train_confusion": {
+        "FN": 1,
+        "FP": 0,
+        "TN": 8191,
+        "TP": 0
+      },
+      "train_samples": 8192,
+      "training_process_cpu_seconds": 0.05921380199999993,
+      "training_wall_seconds": 0.05921989800026495,
+      "user_competency": "NOT_ASSESSED"
+    }
+  },
+  "status": "PASS_TECHNICAL_TRAINING_AND_RESTART_ONLY",
+  "user_competency": "NOT_ASSESSED"
+}

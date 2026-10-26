@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+artifacts/my_reproduction/
+artifacts/manual_*/

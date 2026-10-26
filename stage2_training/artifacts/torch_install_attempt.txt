@@ -1,0 +1,7 @@
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch==2.6.0+cpu
+  Downloading torch-2.6.0%2Bcpu-cp312-cp312-linux_x86_64.whl.metadata (26 kB)
+Downloading torch-2.6.0%2Bcpu-cp312-cp312-linux_x86_64.whl (178.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.6/178.6 MB 71.0 MB/s  0:00:02
+Saved <WHEEL_DOWNLOAD_DIR>/torch-2.6.0+cpu-cp312-cp312-linux_x86_64.whl
+Successfully downloaded torch

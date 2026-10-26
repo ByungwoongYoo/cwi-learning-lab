@@ -1,0 +1,22 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "testing_environment": "isolated venv with preinstalled system-site numpy/scipy/Pillow; no clean-room install claimed",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "Pillow": "12.3.0",
+    "gradio": "6.30.0",
+    "gradio-client": "2.7.2",
+    "pytest": "9.0.2",
+    "socksio": "1.0.0",
+    "fastapi": "0.141.1",
+    "starlette": "1.6.0",
+    "httpx": "0.28.1",
+    "uvicorn": "0.52.1",
+    "pydantic": "2.13.4",
+    "python-multipart": "0.0.32",
+    "anyio": "4.14.2",
+    "huggingface-hub": "1.33.0"
+  }
+}

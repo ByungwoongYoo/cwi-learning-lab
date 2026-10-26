@@ -1,0 +1,90 @@
+{
+  "code_model_config_image_and_npz_payloads_byte_identical_to_source": true,
+  "date_utc": "2026-10-26",
+  "direct_stage1_model_check": {
+    "passed": true,
+    "path": "stage1_inference/cwi_lab/models.json",
+    "sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416"
+  },
+  "external_mutations": true,
+  "largest_binary": {
+    "bytes": 2906560,
+    "path": "stage1_inference/examples/public_train/original_004_40kV.tiff",
+    "ties": 8
+  },
+  "license_review": {
+    "derived_outputs": "Public CWI attribution retained; no source-author endorsement",
+    "own_code_docs": "MIT",
+    "public_source_tiffs": "CC BY 4.0",
+    "rights_record": "https://ir.cwi.nl/pub/33988",
+    "rights_record_checked_utc": "2026-10-26"
+  },
+  "per_stage_manifest_checks": {
+    "exact_membership_and_hashes_passed": true,
+    "stage1_members_hashed": 55,
+    "stage2_members_hashed": 103
+  },
+  "privacy_and_payload_checks": {
+    "broken_local_markdown_links": 0,
+    "internal_browser_probe_detail_matches": 0,
+    "library_identifier_matches": 0,
+    "npz_object_or_string_arrays": 0,
+    "numeric_npz_archives_inspected": 15,
+    "personalized_career_age_or_screenshot_matches": 0,
+    "private_workspace_or_environment_path_matches": 0,
+    "scope": "Targeted text-pattern inspection, public-source byte comparison, numeric-array inspection and image metadata review; not a comprehensive security or legal certification.",
+    "sensitive_files_identified_in_candidate": [],
+    "text_secret_like_matches": 0,
+    "tiff_and_png_metadata_inspected": 22,
+    "unexpected_image_text_metadata": 0
+  },
+  "prohibited_claims_not_made": [
+    "useful detector",
+    "generalization success",
+    "CUDA execution",
+    "WebGL execution",
+    "multi-node execution",
+    "public deployment",
+    "independent user competence"
+  ],
+  "publication_note": "Local checks above were completed before publication. Public source publication is not deployment or CI evidence.",
+  "publication_status": "PUBLIC_SOURCE_RELEASE",
+  "remaining_blocker": null,
+  "repository_url": "https://github.com/ByungwoongYoo/cwi-learning-lab",
+  "root_integrity_manifest": "SHA256SUMS.json; self-excluding, not a cryptographic signature",
+  "sanitized_or_rehashed_released_files": 17,
+  "source_archives_byte_unchanged": true,
+  "source_data_scope": {
+    "chicken_id": 1,
+    "image_pairs": 2,
+    "included_dataset2_payload": false,
+    "original_ids": [
+      4,
+      6
+    ],
+    "physical_fillets": 1,
+    "source_dataset": 1
+  },
+  "source_released_members_retained": 160,
+  "stage1_fresh_pytest": {
+    "command": "python -m pytest -q -p no:cacheprovider",
+    "discovered": 41,
+    "passed": 41,
+    "result": "41 passed in 4.28s",
+    "skipped": 0
+  },
+  "stage2_fresh_unittest": {
+    "command": "python -m unittest discover -s tests -v",
+    "discovered": 14,
+    "passed": 13,
+    "skip_reason": "Unmodified historical test expects a sibling named cwi_learning_lab; public snapshot names it stage1_inference. Equivalent source-model hash was checked directly and passed.",
+    "skipped": 1
+  },
+  "stage_file_counts": {
+    "stage1_inference": 56,
+    "stage2_training": 104
+  },
+  "status": "LOCAL_CANDIDATE_CHECKS_PASS_PUBLIC_SOURCE_RELEASE",
+  "total_bytes": 39288496,
+  "total_file_count": 169
+}

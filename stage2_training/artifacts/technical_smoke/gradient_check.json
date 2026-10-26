@@ -1,0 +1,10 @@
+{
+  "absolute_tolerance": 1e-06,
+  "data": "SYNTHETIC_ONLY",
+  "epsilon": 1e-06,
+  "max_absolute_error": 1.2256483848671618e-10,
+  "max_scaled_relative_error": 6.5518115574194024e-06,
+  "method": "central finite differences of all 145 parameters versus autograd, dropout disabled for deterministic differentiation",
+  "parameters_checked": 145,
+  "passed": true
+}

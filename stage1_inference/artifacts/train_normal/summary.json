@@ -1,0 +1,151 @@
+{
+  "model": "dual",
+  "model_sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416",
+  "shape": [
+    760,
+    956
+  ],
+  "input_dtype": "float32",
+  "score_kind": "uncalibrated logistic score, NOT a probability of safety or disease",
+  "threshold": 0.5,
+  "minimum_component_area": 25,
+  "connectivity": 8,
+  "whole_image_inference": true,
+  "ground_truth_used_in_inference": false,
+  "image_alarm": true,
+  "alarm_pixels": 13617,
+  "components_shown": 27,
+  "component_count": 27,
+  "components_truncated": false,
+  "setting_status": "ORIGINAL_FROZEN_SETTINGS",
+  "performance_status": "FAILED_DEVELOPMENT_VALIDATION",
+  "known_failure": "Both models alarmed on all 10/10 normal validation images; two correlated fillets only.",
+  "deployment_status": "NOT_DEPLOYED",
+  "authorship": "AI_ASSISTED",
+  "user_learning": "NOT_ASSESSED",
+  "input": {
+    "source": "CWI_PUBLIC_CC_BY_4_TRAIN",
+    "Original_ID": 6,
+    "known_normal": true,
+    "partition": "train",
+    "note": "Used in fitting. This is a false-alarm review example, never a held-out performance estimate."
+  },
+  "review": {
+    "status": "TRAIN_EXAMPLE_ONLY_NOT_EVALUATION",
+    "TP_pixels": 0,
+    "FP_pixels": 13617,
+    "FN_pixels": 0,
+    "dice": 0.0,
+    "note": "Descriptive training-example review; not generalization evidence."
+  },
+  "components": [
+    {
+      "component_id": 71,
+      "area_pixels": 3526
+    },
+    {
+      "component_id": 48,
+      "area_pixels": 3072
+    },
+    {
+      "component_id": 1,
+      "area_pixels": 2170
+    },
+    {
+      "component_id": 76,
+      "area_pixels": 704
+    },
+    {
+      "component_id": 42,
+      "area_pixels": 592
+    },
+    {
+      "component_id": 89,
+      "area_pixels": 468
+    },
+    {
+      "component_id": 36,
+      "area_pixels": 324
+    },
+    {
+      "component_id": 2,
+      "area_pixels": 321
+    },
+    {
+      "component_id": 64,
+      "area_pixels": 295
+    },
+    {
+      "component_id": 49,
+      "area_pixels": 258
+    },
+    {
+      "component_id": 92,
+      "area_pixels": 234
+    },
+    {
+      "component_id": 22,
+      "area_pixels": 216
+    },
+    {
+      "component_id": 24,
+      "area_pixels": 191
+    },
+    {
+      "component_id": 87,
+      "area_pixels": 167
+    },
+    {
+      "component_id": 29,
+      "area_pixels": 159
+    },
+    {
+      "component_id": 31,
+      "area_pixels": 159
+    },
+    {
+      "component_id": 15,
+      "area_pixels": 132
+    },
+    {
+      "component_id": 9,
+      "area_pixels": 131
+    },
+    {
+      "component_id": 62,
+      "area_pixels": 108
+    },
+    {
+      "component_id": 20,
+      "area_pixels": 74
+    },
+    {
+      "component_id": 30,
+      "area_pixels": 69
+    },
+    {
+      "component_id": 81,
+      "area_pixels": 68
+    },
+    {
+      "component_id": 34,
+      "area_pixels": 45
+    },
+    {
+      "component_id": 37,
+      "area_pixels": 43
+    },
+    {
+      "component_id": 53,
+      "area_pixels": 34
+    },
+    {
+      "component_id": 6,
+      "area_pixels": 29
+    },
+    {
+      "component_id": 28,
+      "area_pixels": 28
+    }
+  ]
+}

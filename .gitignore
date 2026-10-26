@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.whl
+.env
+.env.*
+!.env.example
+.DS_Store
+stage1_inference/artifacts/local_run/
+stage2_training/artifacts/my_reproduction/

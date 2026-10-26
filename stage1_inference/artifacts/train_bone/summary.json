@@ -1,0 +1,111 @@
+{
+  "model": "dual",
+  "model_sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416",
+  "shape": [
+    760,
+    956
+  ],
+  "input_dtype": "float32",
+  "score_kind": "uncalibrated logistic score, NOT a probability of safety or disease",
+  "threshold": 0.5,
+  "minimum_component_area": 25,
+  "connectivity": 8,
+  "whole_image_inference": true,
+  "ground_truth_used_in_inference": false,
+  "image_alarm": true,
+  "alarm_pixels": 14772,
+  "components_shown": 17,
+  "component_count": 17,
+  "components_truncated": false,
+  "setting_status": "ORIGINAL_FROZEN_SETTINGS",
+  "performance_status": "FAILED_DEVELOPMENT_VALIDATION",
+  "known_failure": "Both models alarmed on all 10/10 normal validation images; two correlated fillets only.",
+  "deployment_status": "NOT_DEPLOYED",
+  "authorship": "AI_ASSISTED",
+  "user_learning": "NOT_ASSESSED",
+  "input": {
+    "source": "CWI_PUBLIC_CC_BY_4_TRAIN",
+    "Original_ID": 4,
+    "known_normal": false,
+    "partition": "train",
+    "note": "Used in fitting. This is a false-alarm review example, never a held-out performance estimate."
+  },
+  "review": {
+    "status": "TRAIN_EXAMPLE_ONLY_NOT_EVALUATION",
+    "TP_pixels": 133,
+    "FP_pixels": 14639,
+    "FN_pixels": 232,
+    "dice": 0.017572834775715133,
+    "note": "Descriptive training-example review; not generalization evidence."
+  },
+  "components": [
+    {
+      "component_id": 38,
+      "area_pixels": 5668
+    },
+    {
+      "component_id": 29,
+      "area_pixels": 3063
+    },
+    {
+      "component_id": 1,
+      "area_pixels": 1890
+    },
+    {
+      "component_id": 48,
+      "area_pixels": 1614
+    },
+    {
+      "component_id": 54,
+      "area_pixels": 1162
+    },
+    {
+      "component_id": 27,
+      "area_pixels": 253
+    },
+    {
+      "component_id": 56,
+      "area_pixels": 247
+    },
+    {
+      "component_id": 2,
+      "area_pixels": 183
+    },
+    {
+      "component_id": 28,
+      "area_pixels": 140
+    },
+    {
+      "component_id": 33,
+      "area_pixels": 125
+    },
+    {
+      "component_id": 18,
+      "area_pixels": 104
+    },
+    {
+      "component_id": 32,
+      "area_pixels": 71
+    },
+    {
+      "component_id": 14,
+      "area_pixels": 57
+    },
+    {
+      "component_id": 16,
+      "area_pixels": 56
+    },
+    {
+      "component_id": 30,
+      "area_pixels": 55
+    },
+    {
+      "component_id": 17,
+      "area_pixels": 52
+    },
+    {
+      "component_id": 25,
+      "area_pixels": 32
+    }
+  ]
+}

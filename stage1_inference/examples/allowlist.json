@@ -1,0 +1,117 @@
+{
+  "source_url": "https://zenodo.org/records/10579608/files/Submission.zip?download=1",
+  "source_archive_bytes": 2748539581,
+  "license": "CC BY 4.0; creator GPL3 code not used",
+  "max_download_bytes": 31457280,
+  "selection_rule": "Lowest Original_ID in each Bone_Class within frozen train partition; selected before inference.",
+  "lineages": [
+    {
+      "Original_ID": 6,
+      "Chicken_ID": 1,
+      "Bone_ID": 0,
+      "Bone_Class": 0,
+      "partition": "train",
+      "members": {
+        "40kV": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone/000.tiff",
+        "40kV_mask": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone_segm/000.tiff",
+        "90kV": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone/000.tiff",
+        "90kV_mask": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone_segm/000.tiff"
+      }
+    },
+    {
+      "Original_ID": 4,
+      "Chicken_ID": 1,
+      "Bone_ID": 3,
+      "Bone_Class": 1,
+      "partition": "train",
+      "members": {
+        "40kV": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone/004.tiff",
+        "40kV_mask": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone_segm/004.tiff",
+        "90kV": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone/004.tiff",
+        "90kV_mask": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone_segm/004.tiff"
+      }
+    }
+  ],
+  "members": [
+    {
+      "path": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone/000.tiff",
+      "partition": "train",
+      "header_offset": 491,
+      "compressed_size": 2252661,
+      "size": 2906560,
+      "crc32": 1622477559,
+      "compression": 8,
+      "flags": 8
+    },
+    {
+      "path": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone_segm/000.tiff",
+      "partition": "train",
+      "header_offset": 119836911,
+      "compressed_size": 5155,
+      "size": 1453590,
+      "crc32": 2405066788,
+      "compression": 8,
+      "flags": 8
+    },
+    {
+      "path": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone/004.tiff",
+      "partition": "train",
+      "header_offset": 129177445,
+      "compressed_size": 2253372,
+      "size": 2906560,
+      "crc32": 799510348,
+      "compression": 8,
+      "flags": 8
+    },
+    {
+      "path": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone_segm/004.tiff",
+      "partition": "train",
+      "header_offset": 280597441,
+      "compressed_size": 5273,
+      "size": 1453590,
+      "crc32": 4242996449,
+      "compression": 8,
+      "flags": 8
+    },
+    {
+      "path": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone/000.tiff",
+      "partition": "train",
+      "header_offset": 574082233,
+      "compressed_size": 2402585,
+      "size": 2906560,
+      "crc32": 1863771087,
+      "compression": 8,
+      "flags": 8
+    },
+    {
+      "path": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone_segm/000.tiff",
+      "partition": "train",
+      "header_offset": 701056948,
+      "compressed_size": 5155,
+      "size": 1453590,
+      "crc32": 2405066788,
+      "compression": 8,
+      "flags": 8
+    },
+    {
+      "path": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone/004.tiff",
+      "partition": "train",
+      "header_offset": 710978934,
+      "compressed_size": 2402183,
+      "size": 2906560,
+      "crc32": 3242809183,
+      "compression": 8,
+      "flags": 8
+    },
+    {
+      "path": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone_segm/004.tiff",
+      "partition": "train",
+      "header_offset": 871220764,
+      "compressed_size": 5273,
+      "size": 1453590,
+      "crc32": 4242996449,
+      "compression": 8,
+      "flags": 8
+    }
+  ]
+}

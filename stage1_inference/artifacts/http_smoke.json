@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Real local HTTP server; NOT browser/UI QA, NOT remote deployment",
+  "/": {
+    "status": 200,
+    "bytes": 41120
+  },
+  "/config": {
+    "status": 200,
+    "bytes": 36565
+  },
+  "/gradio_api/info": {
+    "status": 200,
+    "bytes": 45
+  },
+  "http_inference": {
+    "status": "PASS",
+    "alarm_pixels": 8459,
+    "model": "dual"
+  },
+  "http_upload_inference": {
+    "status": "PASS",
+    "shape": [
+      16,
+      16
+    ],
+    "model": "low"
+  }
+}

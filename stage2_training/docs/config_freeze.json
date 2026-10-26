@@ -1,0 +1,17 @@
+{
+  "config_sha256": "5646af441474857f99387c1282b38f3c83cd66aaaa443c3a0603a36e064804cf",
+  "frozen_at_utc": "2026-10-26T04:14:19.049376+00:00",
+  "preselected_config_no_hyperparameter_search": true,
+  "source_sha256": {
+    "original_004_40kV.tiff": "fadd189a2397d474ed6d520e755518256e354f64cba92c5f100694e05aab9cab",
+    "original_004_40kV_mask.tiff": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+    "original_004_90kV.tiff": "f6d4559f067d6b528fe16e53a9aaaedb0467f2f59b828afb577c29f28830d122",
+    "original_004_90kV_mask.tiff": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+    "original_006_40kV.tiff": "79eb66bfc0e7d6acb0f483fd6f37c2312bdb04d3b9edea155d7a488461f48888",
+    "original_006_40kV_mask.tiff": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a",
+    "original_006_90kV.tiff": "77fe89e90b1ea38b249bf8d51e1c896aff4a7205912e3a89371475902e5f2dc1",
+    "original_006_90kV_mask.tiff": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a"
+  },
+  "status": "FROZEN_BEFORE_FIRST_TRAINING_RUN",
+  "training_invocations_before_freeze": 0
+}

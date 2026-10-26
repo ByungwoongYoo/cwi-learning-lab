@@ -1,0 +1,145 @@
+{
+  "received": 9332689,
+  "reserved": 9332689,
+  "requests": [
+    {
+      "start": 491,
+      "length": 30,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone/000.tiff"
+    },
+    {
+      "start": 521,
+      "length": 2252757,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone/000.tiff"
+    },
+    {
+      "start": 119836911,
+      "length": 30,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone_segm/000.tiff"
+    },
+    {
+      "start": 119836941,
+      "length": 5256,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone_segm/000.tiff"
+    },
+    {
+      "start": 129177445,
+      "length": 30,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone/004.tiff"
+    },
+    {
+      "start": 129177475,
+      "length": 2253469,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone/004.tiff"
+    },
+    {
+      "start": 280597441,
+      "length": 30,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone_segm/004.tiff"
+    },
+    {
+      "start": 280597471,
+      "length": 5375,
+      "member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone_segm/004.tiff"
+    },
+    {
+      "start": 574082233,
+      "length": 30,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone/000.tiff"
+    },
+    {
+      "start": 574082263,
+      "length": 2402681,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone/000.tiff"
+    },
+    {
+      "start": 701056948,
+      "length": 30,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone_segm/000.tiff"
+    },
+    {
+      "start": 701056978,
+      "length": 5256,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone_segm/000.tiff"
+    },
+    {
+      "start": 710978934,
+      "length": 30,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone/004.tiff"
+    },
+    {
+      "start": 710978964,
+      "length": 2402280,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone/004.tiff"
+    },
+    {
+      "start": 871220764,
+      "length": 30,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone_segm/004.tiff"
+    },
+    {
+      "start": 871220794,
+      "length": 5375,
+      "member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone_segm/004.tiff"
+    }
+  ],
+  "members": {
+    "original_006_40kV.tiff": {
+      "source_member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone/000.tiff",
+      "sha256": "79eb66bfc0e7d6acb0f483fd6f37c2312bdb04d3b9edea155d7a488461f48888",
+      "bytes": 2906560,
+      "partition": "train",
+      "Original_ID": 6
+    },
+    "original_006_40kV_mask.tiff": {
+      "source_member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/NoBone_segm/000.tiff",
+      "sha256": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a",
+      "bytes": 1453590,
+      "partition": "train",
+      "Original_ID": 6
+    },
+    "original_004_40kV.tiff": {
+      "source_member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone/004.tiff",
+      "sha256": "fadd189a2397d474ed6d520e755518256e354f64cba92c5f100694e05aab9cab",
+      "bytes": 2906560,
+      "partition": "train",
+      "Original_ID": 4
+    },
+    "original_004_40kV_mask.tiff": {
+      "source_member": "Submission/Dataset #1/40kV_40W_100ms_10avg/train/RibBone_segm/004.tiff",
+      "sha256": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+      "bytes": 1453590,
+      "partition": "train",
+      "Original_ID": 4
+    },
+    "original_006_90kV.tiff": {
+      "source_member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone/000.tiff",
+      "sha256": "77fe89e90b1ea38b249bf8d51e1c896aff4a7205912e3a89371475902e5f2dc1",
+      "bytes": 2906560,
+      "partition": "train",
+      "Original_ID": 6
+    },
+    "original_006_90kV_mask.tiff": {
+      "source_member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/NoBone_segm/000.tiff",
+      "sha256": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a",
+      "bytes": 1453590,
+      "partition": "train",
+      "Original_ID": 6
+    },
+    "original_004_90kV.tiff": {
+      "source_member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone/004.tiff",
+      "sha256": "f6d4559f067d6b528fe16e53a9aaaedb0467f2f59b828afb577c29f28830d122",
+      "bytes": 2906560,
+      "partition": "train",
+      "Original_ID": 4
+    },
+    "original_004_90kV_mask.tiff": {
+      "source_member": "Submission/Dataset #1/90kV_45W_100ms_10avg/train/RibBone_segm/004.tiff",
+      "sha256": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+      "bytes": 1453590,
+      "partition": "train",
+      "Original_ID": 4
+    }
+  },
+  "complete": true
+}

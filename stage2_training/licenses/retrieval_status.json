@@ -1,0 +1,9 @@
+{
+  "action": "download full plain-text license into artifact",
+  "target": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+  "status": "BLOCKED_HTTP_403",
+  "reason": "urllib.request.urlopen returned HTTP Error 403: Forbidden",
+  "retry_or_workaround_attempted": false,
+  "fallback": "retain original attribution; link official legal text and include license notice",
+  "date_utc": "2026-10-26"
+}

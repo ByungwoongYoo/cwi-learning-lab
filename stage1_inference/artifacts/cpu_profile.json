@@ -1,0 +1,77 @@
+{
+  "scope": "CPU whole-image frozen inference; not training, GPU, new validation or tuning",
+  "input": {
+    "Original_ID": 6,
+    "partition": "train",
+    "shape": [
+      760,
+      956
+    ]
+  },
+  "model_sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416",
+  "warmup_calls_per_model": 1,
+  "timed_calls_per_model": 5,
+  "timed_region": "infer(): feature construction, model JSON/hash, standardization/logistic, 8conn cleanup, summary; excludes TIFF decode, UI, plotting and network",
+  "clock": "time.perf_counter_ns",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "configured_thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "results": {
+    "low": {
+      "milliseconds": [
+        33.255951,
+        34.014041,
+        31.068264,
+        31.807194,
+        32.429219
+      ],
+      "median_ms": 32.429219,
+      "min_ms": 31.068264,
+      "max_ms": 34.014041,
+      "alarm_pixels": 34485
+    },
+    "dual": {
+      "milliseconds": [
+        55.699399,
+        53.42227,
+        59.433772,
+        57.879485,
+        58.867981
+      ],
+      "median_ms": 57.879485,
+      "min_ms": 53.42227,
+      "max_ms": 59.433772,
+      "alarm_pixels": 13617
+    }
+  },
+  "observed_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "limitations": "Single machine, one TRAIN input, five repetitions; not production latency, throughput, speedup, accuracy or hardware-generalization evidence."
+}

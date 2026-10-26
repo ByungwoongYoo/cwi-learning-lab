@@ -1,0 +1,395 @@
+{
+  "browser_ui": "UI_NOT_RUN",
+  "builder_http_receipt_reviewed": {
+    "/": {
+      "bytes": 41120,
+      "status": 200
+    },
+    "/config": {
+      "bytes": 36565,
+      "status": 200
+    },
+    "/gradio_api/info": {
+      "bytes": 45,
+      "status": 200
+    },
+    "http_inference": {
+      "alarm_pixels": 8459,
+      "model": "dual",
+      "status": "PASS"
+    },
+    "http_upload_inference": {
+      "model": "low",
+      "shape": [
+        16,
+        16
+      ],
+      "status": "PASS"
+    },
+    "scope": "Real local HTTP server; NOT browser/UI QA, NOT remote deployment",
+    "status": "PASS"
+  },
+  "code_sha256": {
+    "app.py": "faa7378e69100b025536b1d8d1c50ec0c3f9491f7b05c5322e9b22e3d3aef19d",
+    "cwi_lab/cli.py": "a44c774fabfd6836345a12b2b1cfde6a0d6219b97b60f95ad6e15cc7326e2361",
+    "cwi_lab/examples.py": "b8bbcb59f884976c75e6b97c8d589382aac6742fc719a46dec355e3e649c4255",
+    "cwi_lab/gradio_guard.py": "c68bc12b2ad756eb2797b49bedaaec6ac9a31dfe2053c08a2c816de87c3dbfcb",
+    "cwi_lab/inference.py": "e9a15a96bdbd2cd9d9001498587f60053ae487e9e771d84de160bba898147aee",
+    "cwi_lab/models.json": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416"
+  },
+  "date_utc": "2026-10-26",
+  "documentation_checks": [
+    "Known normal 10/10 alarm failure explicit",
+    "NOT_DEPLOYED and AI_ASSISTED explicit",
+    "User competency NOT_ASSESSED; optional worked explanations, no mandatory quiz",
+    "No fresh model/research/performance or CUDA/multinode claims",
+    "All local Markdown links resolve",
+    "HF CPU Basic Gradio creation requires eligible account plan; no unconditional free promise"
+  ],
+  "implementation_regression": "PASS",
+  "limitations": [
+    "No rendered browser layout, interaction, or accessibility QA",
+    "No fresh clean-room installation",
+    "No Windows/user-PC verification",
+    "No public hosting or remote build",
+    "Not a penetration/parser/supply-chain security audit",
+    "No model performance evaluation or user skill assessment"
+  ],
+  "provenance": {
+    "excluded_payloads": [
+      "KAMP",
+      "validation20",
+      "purged47",
+      "original test",
+      "Dataset2"
+    ],
+    "integrity": "All 8 CRC32/size/SHA256 matched allowlist and fetch receipt; both Original_ID entries match frozen train protocol",
+    "model_sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416",
+    "partition": "train",
+    "payload_files": 8,
+    "source_original_ids": [
+      4,
+      6
+    ],
+    "transferred_bytes": 9332689
+  },
+  "public_snapshot_note": "Internal browser-attempt details omitted; original audit result and 65 check records retained.",
+  "resolved_findings": [
+    {
+      "finding": "Default Gradio File pre-cache may fetch URL-valued FileData before bytes callback",
+      "resolution": "App-scoped LocalUploadBlocks validates all inputs before superclass preprocessing; requires bounded canonical upload-root files, rejects URL/path/stream/non-file nested payloads, strips URL and extra metadata",
+      "severity": "high",
+      "verification": "15 independent transport checks with socket.connect blocked; remote cases never reached cache method"
+    },
+    {
+      "finding": "Exactly 100 retained components incorrectly marked truncated",
+      "resolution": "Actual 8-connected retained count now compared with >100; cases 99/100/101 passed",
+      "severity": "low"
+    },
+    {
+      "finding": "Fractional minimum area coerced in callback and invalid NaN/Inf could escape safe validation",
+      "resolution": "No callback integer coercion; explicit real/finite/integer/range validation; 16 invalid-parameter checks passed",
+      "severity": "low"
+    },
+    {
+      "finding": "Parameter tests could exit early for missing dual input",
+      "resolution": "Builder parameter-specific tests use valid inputs",
+      "severity": "low"
+    }
+  ],
+  "reviewer": "Independent AI auditor; not human certification",
+  "status": "PASS_WITH_UI_NOT_RUN",
+  "test_count": 65,
+  "test_groups": {
+    "core": [
+      {
+        "name": "frozen_model_bytes_match",
+        "status": "PASS"
+      },
+      {
+        "name": "exact_feature_scaler_logit_score_mask_parity_6_cases",
+        "status": "PASS"
+      },
+      {
+        "name": "components_8_connectivity_threshold_inclusive_area24vs25_empty_full",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_accept_exact_signedfloat",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_accept_exact_minshape",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_accept_exact_maxpixels",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_accept_exact_maxdim",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_accept_exact_extremeallowed",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_uint8",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_uint16",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_rgb",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_underside",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_overside",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_overpixels",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_nan",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_posinf",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_neginf",
+        "status": "PASS"
+      },
+      {
+        "name": "tiff_reject_overvalue",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_multipage",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_path",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_url",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_empty",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_bigsize",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_headeronly",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_not_tiff",
+        "status": "PASS"
+      },
+      {
+        "name": "reject_bytesarray",
+        "status": "PASS"
+      },
+      {
+        "name": "accept_exact_bytecap_with_valid_padding",
+        "status": "PASS"
+      },
+      {
+        "name": "pair_shape_rejected_dual",
+        "status": "PASS"
+      },
+      {
+        "name": "pair_shape_rejected_low",
+        "status": "PASS"
+      },
+      {
+        "name": "dual_missing_rejected",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid_model_rejected",
+        "status": "PASS"
+      }
+    ],
+    "parameter_and_component_metadata": [
+      {
+        "name": "min_area_rejected_nan",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_inf",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_-inf",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_None",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_'25'",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_25.5",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_True",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_0",
+        "status": "PASS"
+      },
+      {
+        "name": "min_area_rejected_10001",
+        "status": "PASS"
+      },
+      {
+        "name": "threshold_rejected_nan",
+        "status": "PASS"
+      },
+      {
+        "name": "threshold_rejected_inf",
+        "status": "PASS"
+      },
+      {
+        "name": "threshold_rejected_-inf",
+        "status": "PASS"
+      },
+      {
+        "name": "threshold_rejected_None",
+        "status": "PASS"
+      },
+      {
+        "name": "threshold_rejected_'.5'",
+        "status": "PASS"
+      },
+      {
+        "name": "threshold_rejected_0.009",
+        "status": "PASS"
+      },
+      {
+        "name": "threshold_rejected_0.991",
+        "status": "PASS"
+      },
+      {
+        "name": "component_metadata_99",
+        "status": "PASS"
+      },
+      {
+        "name": "component_metadata_100",
+        "status": "PASS"
+      },
+      {
+        "name": "component_metadata_101",
+        "status": "PASS"
+      }
+    ],
+    "precache_transport": [
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_http_path",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_https_path",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_scheme_relative_path",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_file_uri",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_outside_upload_root",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_symlink_escape",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_nonexistent",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_over_8MiB",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_stream",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_bare_path_string",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_file_list",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 0,
+        "name": "precache_reject_nested_nonfile",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 1,
+        "name": "upload_local_no_metadata",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 1,
+        "name": "upload_absolute_url_and_nested_metadata_stripped",
+        "status": "PASS"
+      },
+      {
+        "cache_paths_reached": 1,
+        "name": "upload_FileData_object",
+        "status": "PASS"
+      }
+    ]
+  },
+  "tested_bounds": {
+    "absolute_value": 10000,
+    "bytes": 8388608,
+    "dtype": "float32",
+    "max_dimension": 1536,
+    "min_dimension": 16,
+    "model_sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416",
+    "pixels": 1048576
+  }
+}

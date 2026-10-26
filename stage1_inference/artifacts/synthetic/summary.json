@@ -1,0 +1,43 @@
+{
+  "model": "dual",
+  "model_sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416",
+  "shape": [
+    256,
+    320
+  ],
+  "input_dtype": "float32",
+  "score_kind": "uncalibrated logistic score, NOT a probability of safety or disease",
+  "threshold": 0.5,
+  "minimum_component_area": 25,
+  "connectivity": 8,
+  "whole_image_inference": true,
+  "ground_truth_used_in_inference": false,
+  "image_alarm": true,
+  "alarm_pixels": 8459,
+  "components_shown": 1,
+  "component_count": 1,
+  "components_truncated": false,
+  "setting_status": "ORIGINAL_FROZEN_SETTINGS",
+  "performance_status": "FAILED_DEVELOPMENT_VALIDATION",
+  "known_failure": "Both models alarmed on all 10/10 normal validation images; two correlated fillets only.",
+  "deployment_status": "NOT_DEPLOYED",
+  "authorship": "AI_ASSISTED",
+  "user_learning": "NOT_ASSESSED",
+  "input": {
+    "source": "SYNTHETIC_NOT_REAL_XRAY",
+    "known_normal": false,
+    "partition": "none",
+    "note": "Artificial arrays only test software wiring. They prove no detection performance."
+  },
+  "review": {
+    "status": "NO_GROUND_TRUTH",
+    "false_alarm": null,
+    "note": "An alarm on known-normal input is a false alarm; no alarm does not prove safety."
+  },
+  "components": [
+    {
+      "component_id": 1,
+      "area_pixels": 8459
+    }
+  ]
+}

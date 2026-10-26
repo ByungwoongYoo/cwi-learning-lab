@@ -1,0 +1,166 @@
+{
+  "authorship": "AI_ASSISTED",
+  "browser_ui": "UI_NOT_RUN",
+  "candidate_repository": {
+    "availability_guaranteed": false,
+    "name": "cwi-learning-lab",
+    "name_search_result": "EMPTY_AS_REPORTED_BY_PARENT_TASK",
+    "owner": "ByungwoongYoo",
+    "repository_created": true,
+    "repository_id": 1433908679,
+    "url": "https://github.com/ByungwoongYoo/cwi-learning-lab",
+    "visibility": "public"
+  },
+  "date_utc": "2026-10-26",
+  "deployment": "NOT_DEPLOYED",
+  "excluded_not_copied": [
+    "original ZIP archives",
+    "private original-source archive",
+    "private conversations and personalized planning",
+    "internal browser/remote-probe details",
+    "library receipts/IDs",
+    "venvs and dependency wheels",
+    "caches and temporary helper tools",
+    ".git",
+    ".github/workflows"
+  ],
+  "external_state_changed": true,
+  "immutable_payloads": [
+    "all .py code and tests",
+    "configuration JSON",
+    "Stage 1 model coefficients",
+    "original TIFF and PNG image bytes",
+    "Stage 2 NPZ data, predictions and checkpoint arrays"
+  ],
+  "layout_policy": "All released files from each frozen ZIP retained under renamed stage directories; no additional original working-tree files copied. Root public documentation and manifests added.",
+  "local_only": false,
+  "modified_files": [
+    {
+      "path": "stage1_inference/README.md",
+      "public_sha256": "92511c4c8279ce369ed0d45495489b113571bb99287b9549914fbed4727c1e38",
+      "reason": "Replaced time-sensitive hosting-plan discussion with local-only, not-deployed scope.",
+      "source_sha256": "ab0ff39323a860b0759d99ae9dec397abad418942d9ffb88ad9b4d4be3ba6841"
+    },
+    {
+      "path": "stage1_inference/SHA256SUMS.json",
+      "public_sha256": "a1cbab9a935d165d61e2a43429c1d6d51fb7bb6736c6ab4585417ac2093864b5",
+      "reason": "Regenerated self-excluding file hashes for this sanitized public candidate; original manifest remains in immutable source ZIP.",
+      "source_sha256": "2cb86439b17d42c5f9a12ab1af4de2078e87bc01f478c4756f37e49639205666"
+    },
+    {
+      "path": "stage1_inference/docs/INDEPENDENT_AUDIT.md",
+      "public_sha256": "6e0e68883d03bcb95588ae14dce2917a5c2a914cd1f80980ac5dcd8c1f53b00d",
+      "reason": "Omitted internal browser-attempt details; preserved UI_NOT_RUN and HTTP-only limitation.",
+      "source_sha256": "f7ba6d86a168b5686cc362d9cd49cb71de17ff970398a6ef2a1cbb234d299426"
+    },
+    {
+      "path": "stage1_inference/docs/STAGE_STATUS.json",
+      "public_sha256": "6a42c3ba218c317ca8fade77d36611e681bcd8521b2c7fbaffd871c41c559767",
+      "reason": "Replaced internal browser failure detail with public UI_NOT_RUN scope.",
+      "source_sha256": "4503f052f2af2d04eb49f5e2c78f9981fcd3f46a7c473022b3a81eb72b82dde5"
+    },
+    {
+      "path": "stage1_inference/docs/VERIFICATION.md",
+      "public_sha256": "b9dc060bde11890533f59b3fe59ff2bf104ca57b1144e5087484dbf4a73cca69",
+      "reason": "Omitted internal browser-attempt details; preserved UI_NOT_RUN.",
+      "source_sha256": "93d3f2bcc1335485d39668c88c96d1524bb5722c03c737a3441be61da88324dc"
+    },
+    {
+      "path": "stage1_inference/docs/independent_audit.json",
+      "public_sha256": "a930307aa21f5bb821ec8d11cfd60d60abd0f0d38467832846c749b9c92a35c5",
+      "reason": "Removed internal browser_attempt object; all regression checks and limitations retained.",
+      "source_sha256": "a0e4cc4c40dc7b9ac5be6478bca393769a665dcb55840e4e9da47d2b50489579"
+    },
+    {
+      "path": "stage1_inference/docs/learning/FIRST_SESSION_KO.md",
+      "public_sha256": "4bcf900e208d574bdc854331db4487e7950e381e359aed0b1819b1b11b18640f",
+      "reason": "Removed private task-planning context; retained technical worked example and authorship limits.",
+      "source_sha256": "98204fa776da61ce00963038e22b1147fae382f1838961049fed41eb75896df6"
+    },
+    {
+      "path": "stage1_inference/docs/learning/README.md",
+      "public_sha256": "546468156a5fd62213458714fd6313f6df201f1d4e34307896ed005a629b8260",
+      "reason": "Replaced personalized screenshot/job/task planning with public-neutral learning index.",
+      "source_sha256": "70671aa340dd154c521c244a5af62141ac0cdc4f41d2f61c4316a1c2ce87c5bd"
+    },
+    {
+      "path": "stage1_inference/docs/learning/SKILL_EVIDENCE_MATRIX.md",
+      "public_sha256": "9181d8bcc0baa57a03d6c40a95e604e7678e3b492b0b11b4922400caa14743e7",
+      "reason": "Removed personalized career/job/screenshot and future-task planning; replaced with truthful released-evidence scope.",
+      "source_sha256": "423e203f4b0f78cb51c059f5b67a7a4bb91b087a0b22946525693fc4af110f5e"
+    },
+    {
+      "path": "stage2_training/SHA256SUMS.json",
+      "public_sha256": "1b754021e93167ea27fcb3e79da8cb32d8e941ebc4258fcde6e9b23268e5fb57",
+      "reason": "Regenerated self-excluding file hashes for this sanitized public candidate; original manifest remains in immutable source ZIP.",
+      "source_sha256": "bbc3cd3de7cf5c901d0e90cf1a5bce458d75f9f78910d8c857826c642ba94c3e"
+    },
+    {
+      "path": "stage2_training/artifacts/attempt01_pretraining_loader_failure/process_commands.json",
+      "public_sha256": "0fc25c9b89a24eaaf25007efc9bf5c33d48a0cb0b78a6342d9f290ca6ad223d8",
+      "reason": "Historical log only: replaced private execution-environment paths with neutral placeholders; not a new run.",
+      "source_sha256": "5ebd7edc476811f5cde9f0edc1b7f110ff8cd9ad2ffc8da9ddd59fb96d65caf0"
+    },
+    {
+      "path": "stage2_training/artifacts/attempt01_pretraining_loader_failure/uninterrupted_stderr.txt",
+      "public_sha256": "625b56ac073d500150475b112beb3cab5cbe56c247cac489b9fa9912f1f94503",
+      "reason": "Historical log only: replaced private execution-environment paths with neutral placeholders; not a new run.",
+      "source_sha256": "99263b5a310656bb32b9b34d524dac6822e0bf6eb3af249bee54ee167ba4c092"
+    },
+    {
+      "path": "stage2_training/artifacts/attempt01_stderr.txt",
+      "public_sha256": "6df73f1b04c69cafd99cced4cb7cc3404fc157c36f4f03ee0a1d698b2ad47e6a",
+      "reason": "Historical log only: replaced private execution-environment paths with neutral placeholders; not a new run.",
+      "source_sha256": "be280f6284ed477a3779f3b9b32504b3af8f42acddbdc3498cede4c521cd357e"
+    },
+    {
+      "path": "stage2_training/artifacts/attempt02_first_complete/process_commands.json",
+      "public_sha256": "ca8dca5a06f6dade19a58c9e13e5ab8933d63ed06ec9cdf6d183cf103ee5c8e6",
+      "reason": "Historical log only: replaced private execution-environment paths with neutral placeholders; not a new run.",
+      "source_sha256": "8b7df61cacc1351f99081a6c0b2c3f2f8a08394db7a2c5d5bf4cf4b70f433b64"
+    },
+    {
+      "path": "stage2_training/artifacts/technical_smoke/process_commands.json",
+      "public_sha256": "57f9fdeefbcf3f2067f4375279826e9bbe0b53dec6021c0a3b9a7ec292c7811a",
+      "reason": "Historical log only: replaced private execution-environment paths with neutral placeholders; not a new run.",
+      "source_sha256": "0afdebd02347cebeb603877b7e12424af457bff7ca4b9ae27e4da39b1c792aa1"
+    },
+    {
+      "path": "stage2_training/artifacts/torch_install.txt",
+      "public_sha256": "4d031cb4386d99ae410a960583d3ba5eff39b94e748d9265b3984e20091cd4f3",
+      "reason": "Historical log only: replaced private execution-environment paths with neutral placeholders; not a new run.",
+      "source_sha256": "f48886acf3f6717745807d664b6319b45654f30c42dc2d63273a06aabcf07e80"
+    },
+    {
+      "path": "stage2_training/artifacts/torch_install_attempt.txt",
+      "public_sha256": "72d419fa2dc693c7e4c52cf61c416718b827165afb4b2700c9096a3e5bab2897",
+      "reason": "Historical log only: replaced private execution-environment paths with neutral placeholders; not a new run.",
+      "source_sha256": "7fe979e89cf3b05e1a2fa48f7e2f36d07c79d1bbb371708376fae368be75527a"
+    }
+  ],
+  "publication_scope": "Owner-approved public GitHub source publication only; no hosted interactive demo, Hugging Face deployment or Actions execution.",
+  "publish_authorized": false,
+  "redactions_are_not_new_execution_results": true,
+  "schema_version": 1,
+  "source_archives": [
+    {
+      "archive": "cwi_learning_lab_stage1_20261026.zip",
+      "bytes": 10659627,
+      "public_subdirectory": "stage1_inference",
+      "released_file_count": 56,
+      "sha256": "6f0c6f857618ea9169da4e07404ddd08e1f96bd3127869ac72cedc478cbc67f7",
+      "source_archive_modified": false
+    },
+    {
+      "archive": "cwi_training_lab_stage2_20261026.zip",
+      "bytes": 11288291,
+      "public_subdirectory": "stage2_training",
+      "released_file_count": 104,
+      "sha256": "2d4bf4d22c815b26b66cc2a9591530403f05868ab0d531d788ad45899bfc8f15",
+      "source_archive_modified": false
+    }
+  ],
+  "source_zip_bytes_immutable": true,
+  "status": "PUBLIC_SOURCE_RELEASE",
+  "user_competency": "NOT_ASSESSED"
+}

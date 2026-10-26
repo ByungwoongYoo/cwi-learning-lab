@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "cwi-learning-lab"
+version = "0.1.0"
+description = "AI-assisted, CPU-only failed-baseline review learning app"
+requires-python = ">=3.12,<3.13"
+[project.scripts]
+cwi-lab = "cwi_lab.cli:main"
+[tool.setuptools.package-data]
+cwi_lab = ["models.json"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
