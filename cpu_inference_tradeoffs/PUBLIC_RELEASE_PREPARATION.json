@@ -1,0 +1,53 @@
+{
+  "added_file": "PUBLIC_RELEASE_PREPARATION.json",
+  "authorship": "AI_ASSISTED",
+  "base_commit_preserved": "466b747e8289da92e0e5d421fd86acb9c2535d4b",
+  "deployment": "NOT_DEPLOYED",
+  "derived_integrity_file": {
+    "path": "SHA256SUMS.txt",
+    "policy": "Regenerated over the public directory, excluding itself; original manifest remains in immutable ZIP."
+  },
+  "directory": "cpu_inference_tradeoffs",
+  "findings": "INT8 serialization reduced by approximately 68.8%, but paired median FP32/INT8 ratios .292/.446/.830 are below one; all maximum-probability difference quality gates failed. Not an optimization success.",
+  "limitations": "Synthetic small MLP, fixed CPU conditions, block-average latency measurements; no real-world validation, GPU, distributed or user mastery claim.",
+  "modified_released_documentation": [
+    {
+      "path": "README.md",
+      "public_sha256": "9b2276f335b52f633fa268586dc81715f210b393a63d21a5fdfaa955b6b3a13e",
+      "reason": "Added publication scope and public-copy integrity links.",
+      "source_sha256": "fc783f48b57a55758e2be75fdbd9ed8bfb8c9ea87f828d9c6869732e1b8915b3"
+    },
+    {
+      "path": "docs/ONE_MINUTE_KO.md",
+      "public_sha256": "9111114969c7dfdc180af9253f2ce6302b87b35034475036fe583f6bca77dfff",
+      "reason": "Neutral non-personal wording; scientific claim unchanged.",
+      "source_sha256": "85990c205b41a30f449141ac1cbdffea56399ab64d535be2257fbef3b8849d77"
+    },
+    {
+      "path": "docs/INDEPENDENT_AUDIT.json",
+      "public_sha256": "c8edd16856418db02a63a79197ffb9b7243a30e070b2e39a654eb5ee4502c1ff",
+      "reason": "Generalized three audit temporary-directory prefixes; rejection inputs and outcomes unchanged.",
+      "source_sha256": "4f89642b363d92a8f820d7c13aca870e57e80ff18b42890e8288439a0d97c1d9"
+    }
+  ],
+  "original_repository_files_unchanged": 687,
+  "privacy_review": {
+    "credentials_or_private_key_patterns": 0,
+    "private_conversation_identifiers": 0,
+    "private_workspace_paths_remaining": 0,
+    "public_build_path_preserved": "Compiler path in installed PyTorch build configuration is upstream build metadata, not a private workspace path.",
+    "scope": "Targeted text, manifest and artifact checks; not exhaustive security certification.",
+    "symlink_members": 0
+  },
+  "pypi_published": false,
+  "source_integrity_manifest_sha256": "8e0adfb1c24bffdcb458cda77d964b2fd3cd435aba5c992b2eff0567ad828a60",
+  "source_tests_plan_results_raw_timings_arrays_environment_evidence_byte_unchanged": true,
+  "source_zip_bytes": 292982,
+  "source_zip_filename": "cpu_inference_tradeoffs_20261026.zip",
+  "source_zip_members_retained": 27,
+  "source_zip_regular_files": 27,
+  "source_zip_sha256": "eb9ad0bc1207ecf0d02d6ca51703cc2ab8f46c625f6212f3dda4e35bc93272a2",
+  "status": "PUBLIC_SOURCE_ADDITION",
+  "user_competency": "NOT_ASSESSED",
+  "workflow_added": false
+}

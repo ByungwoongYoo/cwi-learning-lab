@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "seed": 20261026,
+  "data_seeds": {
+    "train": 101,
+    "calibration": 202,
+    "test": 303
+  },
+  "sizes": {
+    "train": 8192,
+    "calibration": 2048,
+    "test": 4096
+  },
+  "architecture": [
+    64,
+    128,
+    64,
+    2
+  ],
+  "epochs": 15,
+  "train_batch": 512,
+  "learning_rate": 0.003,
+  "threads": 1,
+  "backend": "x86",
+  "batch_sizes": [
+    1,
+    32,
+    256
+  ],
+  "warmup": 20,
+  "blocks": 20,
+  "calls_per_block": 50,
+  "accuracy_drop_tolerance": 0.01,
+  "max_probability_difference_tolerance": 0.1,
+  "timing_scope": "precreated CPU float32 tensor -> logits; no data generation, conversion, softmax, file IO, network or concurrent serving",
+  "decision": "Report every batch and all negative findings; no test-driven model/configuration selection. Dynamic quantization calibration split is a pre-test shape/finite smoke only, not observer calibration or model tuning."
+}

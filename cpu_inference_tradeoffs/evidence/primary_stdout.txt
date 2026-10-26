@@ -1,0 +1,94 @@
+{
+  "result": "results_primary/result.json",
+  "timing": [
+    {
+      "batch": 1,
+      "fp32_block_mean_ns_p50": 21420.3,
+      "fp32_block_mean_ns_p95": 26774.024,
+      "int8_block_mean_ns_p50": 76655.43,
+      "int8_block_mean_ns_p95": 87272.57800000001,
+      "paired_fp32_over_int8_median": 0.29235376707704164,
+      "paired_ratio_p05": 0.23596742135990312,
+      "paired_ratio_p95": 0.34478460138292466,
+      "paired_ratio_std": 0.05392120743489949,
+      "int8_faster_blocks": 0,
+      "blocks": 20
+    },
+    {
+      "batch": 32,
+      "fp32_block_mean_ns_p50": 37060.5,
+      "fp32_block_mean_ns_p95": 44075.316,
+      "int8_block_mean_ns_p50": 84639.92,
+      "int8_block_mean_ns_p95": 101487.36,
+      "paired_fp32_over_int8_median": 0.44552045862347645,
+      "paired_ratio_p05": 0.3681585648613268,
+      "paired_ratio_p95": 0.502805795230081,
+      "paired_ratio_std": 0.04491164783001194,
+      "int8_faster_blocks": 0,
+      "blocks": 20
+    },
+    {
+      "batch": 256,
+      "fp32_block_mean_ns_p50": 128855.57,
+      "fp32_block_mean_ns_p95": 173847.99800000005,
+      "int8_block_mean_ns_p50": 153898.72999999998,
+      "int8_block_mean_ns_p95": 183839.20100000003,
+      "paired_fp32_over_int8_median": 0.8300132553513384,
+      "paired_ratio_p05": 0.710436715453239,
+      "paired_ratio_p95": 1.1133217430437583,
+      "paired_ratio_std": 0.1618182177950638,
+      "int8_faster_blocks": 3,
+      "blocks": 20
+    }
+  ],
+  "quality": [
+    {
+      "batch": 1,
+      "fp32": {
+        "accuracy": 0.894775390625,
+        "cross_entropy": 0.43706148862838745
+      },
+      "int8": {
+        "accuracy": 0.895263671875,
+        "cross_entropy": 0.4381968080997467
+      },
+      "accuracy_drop": -0.00048828125,
+      "mean_probability_difference": 0.0044662486761808395,
+      "max_probability_difference": 0.22426673769950867,
+      "prediction_disagreements": 14,
+      "predeclared_quality_gate_pass": false
+    },
+    {
+      "batch": 32,
+      "fp32": {
+        "accuracy": 0.894775390625,
+        "cross_entropy": 0.43706148862838745
+      },
+      "int8": {
+        "accuracy": 0.89501953125,
+        "cross_entropy": 0.43821385502815247
+      },
+      "accuracy_drop": -0.000244140625,
+      "mean_probability_difference": 0.005997819360345602,
+      "max_probability_difference": 0.22677873075008392,
+      "prediction_disagreements": 19,
+      "predeclared_quality_gate_pass": false
+    },
+    {
+      "batch": 256,
+      "fp32": {
+        "accuracy": 0.894775390625,
+        "cross_entropy": 0.43706148862838745
+      },
+      "int8": {
+        "accuracy": 0.896728515625,
+        "cross_entropy": 0.4342128038406372
+      },
+      "accuracy_drop": -0.001953125,
+      "mean_probability_difference": 0.007329770363867283,
+      "max_probability_difference": 0.2608177661895752,
+      "prediction_disagreements": 24,
+      "predeclared_quality_gate_pass": false
+    }
+  ]
+}

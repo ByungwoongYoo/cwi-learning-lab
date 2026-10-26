@@ -1,0 +1,6 @@
+{
+  "rows_checked": 256,
+  "finite": true,
+  "tuned": false,
+  "purpose": "shape and finite smoke; dynamic quantization does not fit observers on this split"
+}

@@ -1,0 +1,282 @@
+{
+  "verdict": "PASS within declared synthetic CPU experiment scope",
+  "final_source_sha256": {
+    "PLAN.json": "0f63acb8a47f7fe54a685d7912a6d68b1607389267280a8e9ecaa12a2ed7eaa5",
+    "PLAN.sha256": "0f4235b90f8587e5a7e247163b071fd1a0304b2b4f31e9c7466bb456a101e1a1",
+    "tradeoff_lab/experiment.py": "a8d7319c9863c584f46db839aba075068fb0972303fad210d4e121a3748cf50f",
+    "tradeoff_lab/__main__.py": "36494f46ba63f38c2dd31b76e3b128d2b1fb8152856398fa638fcb676df59b97",
+    "tests/test_core.py": "b18645381cb9371591cddc7e360d7479df235e57a6ae22fe32af04a2076ab9bb"
+  },
+  "independent_artifact_checks": {
+    "passed": 71,
+    "checks": [
+      "plan exact digest",
+      "parameter count independent",
+      "train loss sequence repeat",
+      "quality repeat exact",
+      "fp32 weight byte repeat",
+      "fp32 weight sha receipt",
+      "fp32 payload bytes independent",
+      "fp32 finite arrays",
+      "fp32 layer weight dtype",
+      "1 predictions bytes repeat",
+      "32 predictions bytes repeat",
+      "256 predictions bytes repeat",
+      "int8 weight byte repeat",
+      "int8 weight sha receipt",
+      "int8 payload bytes independent",
+      "int8 finite arrays",
+      "int8 layer weight dtype",
+      "1 predictions bytes repeat",
+      "32 predictions bytes repeat",
+      "256 predictions bytes repeat",
+      "train data independent hash",
+      "train labels counts",
+      "calibration data independent hash",
+      "calibration labels counts",
+      "test data independent hash",
+      "test labels counts",
+      "no split row overlap",
+      "1 labels independent",
+      "1 fp32 independent accuracy loss",
+      "1 int8 independent accuracy loss",
+      "1 probability differences",
+      "1 gate fails",
+      "32 labels independent",
+      "32 fp32 independent accuracy loss",
+      "32 int8 independent accuracy loss",
+      "32 probability differences",
+      "32 gate fails",
+      "256 labels independent",
+      "256 fp32 independent accuracy loss",
+      "256 int8 independent accuracy loss",
+      "256 probability differences",
+      "256 gate fails",
+      "raw timing expected count",
+      "1 fp32 exact block order",
+      "1 fp32 ABBA order",
+      "1 fp32 elapsed division",
+      "1 fp32 summary quantiles",
+      "1 int8 exact block order",
+      "1 int8 ABBA order",
+      "1 int8 elapsed division",
+      "1 int8 summary quantiles",
+      "1 paired ratios",
+      "32 fp32 exact block order",
+      "32 fp32 ABBA order",
+      "32 fp32 elapsed division",
+      "32 fp32 summary quantiles",
+      "32 int8 exact block order",
+      "32 int8 ABBA order",
+      "32 int8 elapsed division",
+      "32 int8 summary quantiles",
+      "32 paired ratios",
+      "256 fp32 exact block order",
+      "256 fp32 ABBA order",
+      "256 fp32 elapsed division",
+      "256 fp32 summary quantiles",
+      "256 int8 exact block order",
+      "256 int8 ABBA order",
+      "256 int8 elapsed division",
+      "256 int8 summary quantiles",
+      "256 paired ratios",
+      "in memory serialization reduction"
+    ],
+    "primary_timing": [
+      {
+        "batch": 1,
+        "fp32_block_mean_ns_p50": 21420.3,
+        "fp32_block_mean_ns_p95": 26774.024,
+        "int8_block_mean_ns_p50": 76655.43,
+        "int8_block_mean_ns_p95": 87272.57800000001,
+        "paired_fp32_over_int8_median": 0.29235376707704164,
+        "paired_ratio_p05": 0.23596742135990312,
+        "paired_ratio_p95": 0.34478460138292466,
+        "paired_ratio_std": 0.05392120743489949,
+        "int8_faster_blocks": 0,
+        "blocks": 20
+      },
+      {
+        "batch": 32,
+        "fp32_block_mean_ns_p50": 37060.5,
+        "fp32_block_mean_ns_p95": 44075.316,
+        "int8_block_mean_ns_p50": 84639.92,
+        "int8_block_mean_ns_p95": 101487.36,
+        "paired_fp32_over_int8_median": 0.44552045862347645,
+        "paired_ratio_p05": 0.3681585648613268,
+        "paired_ratio_p95": 0.502805795230081,
+        "paired_ratio_std": 0.04491164783001194,
+        "int8_faster_blocks": 0,
+        "blocks": 20
+      },
+      {
+        "batch": 256,
+        "fp32_block_mean_ns_p50": 128855.57,
+        "fp32_block_mean_ns_p95": 173847.99800000005,
+        "int8_block_mean_ns_p50": 153898.72999999998,
+        "int8_block_mean_ns_p95": 183839.20100000003,
+        "paired_fp32_over_int8_median": 0.8300132553513384,
+        "paired_ratio_p05": 0.710436715453239,
+        "paired_ratio_p95": 1.1133217430437583,
+        "paired_ratio_std": 0.1618182177950638,
+        "int8_faster_blocks": 3,
+        "blocks": 20
+      }
+    ],
+    "repeat_timing": [
+      {
+        "batch": 1,
+        "fp32_block_mean_ns_p50": 18449.23,
+        "fp32_block_mean_ns_p95": 20089.377,
+        "int8_block_mean_ns_p50": 64116.479999999996,
+        "int8_block_mean_ns_p95": 69901.457,
+        "paired_fp32_over_int8_median": 0.28476170608126833,
+        "paired_ratio_p05": 0.26122182556320095,
+        "paired_ratio_p95": 0.3147431580598809,
+        "paired_ratio_std": 0.018426582597683417,
+        "int8_faster_blocks": 0,
+        "blocks": 20
+      },
+      {
+        "batch": 32,
+        "fp32_block_mean_ns_p50": 33187.490000000005,
+        "fp32_block_mean_ns_p95": 42776.78300000001,
+        "int8_block_mean_ns_p50": 79877.76999999999,
+        "int8_block_mean_ns_p95": 96039.94800000002,
+        "paired_fp32_over_int8_median": 0.4382713814309561,
+        "paired_ratio_p05": 0.34946809296706827,
+        "paired_ratio_p95": 0.4830182751394843,
+        "paired_ratio_std": 0.047235395649137056,
+        "int8_faster_blocks": 0,
+        "blocks": 20
+      },
+      {
+        "batch": 256,
+        "fp32_block_mean_ns_p50": 123981.95,
+        "fp32_block_mean_ns_p95": 131285.72,
+        "int8_block_mean_ns_p50": 141340.45,
+        "int8_block_mean_ns_p95": 157424.26700000002,
+        "paired_fp32_over_int8_median": 0.8710498799113469,
+        "paired_ratio_p05": 0.8090557705054785,
+        "paired_ratio_p95": 0.9431324584905342,
+        "paired_ratio_std": 0.0448856206332953,
+        "int8_faster_blocks": 0,
+        "blocks": 20
+      }
+    ]
+  },
+  "independent_model_reconstruction": {
+    "pass": true,
+    "actual_quantized_linear_layers": 3,
+    "npz_reconstructed_fp32_then_dynamic_quantized_weights": "exact",
+    "fp32_and_int8_predictions_all_three_batches": "exact",
+    "no_pickle_loaded": true
+  },
+  "cli_checks": {
+    "checks": [
+      {
+        "args": [
+          "--help"
+        ],
+        "code": 0
+      },
+      {
+        "args": [],
+        "code": 2
+      },
+      {
+        "args": [
+          "--output",
+          "results_primary"
+        ],
+        "code": 2
+      },
+      {
+        "args": [
+          "--bad"
+        ],
+        "code": 2
+      },
+      {
+        "args": [
+          "--output",
+          "<AUDIT_TEMP>/link/new"
+        ],
+        "code": 2
+      },
+      {
+        "args": [
+          "--output",
+          "<AUDIT_TEMP>/link/nonexistent/new"
+        ],
+        "code": 2
+      },
+      {
+        "args": [
+          "--output",
+          "<AUDIT_TEMP>/broken"
+        ],
+        "code": 2
+      }
+    ],
+    "unit_tests_stdout": "",
+    "unit_tests_stderr": "test_finite (test_core.Tests.test_finite) ... ok\ntest_metrics (test_core.Tests.test_metrics) ... ok\ntest_model (test_core.Tests.test_model) ... ok\ntest_plan (test_core.Tests.test_plan) ... ok\ntest_repeat (test_core.Tests.test_repeat) ... ok\ntest_shape (test_core.Tests.test_shape) ... ok\ntest_split (test_core.Tests.test_split) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.011s\n\nOK\n"
+  },
+  "final_source_fresh_run": {
+    "weights_predictions_quality_training_losses": "byte/exact match",
+    "timing": [
+      {
+        "batch": 1,
+        "fp32_block_mean_ns_p50": 18564.559999999998,
+        "fp32_block_mean_ns_p95": 21419.712,
+        "int8_block_mean_ns_p50": 69144.57,
+        "int8_block_mean_ns_p95": 73951.60500000001,
+        "paired_fp32_over_int8_median": 0.28271186788788416,
+        "paired_ratio_p05": 0.24322468566487876,
+        "paired_ratio_p95": 0.32871353428716676,
+        "paired_ratio_std": 0.027846386278385458,
+        "int8_faster_blocks": 0,
+        "blocks": 20
+      },
+      {
+        "batch": 32,
+        "fp32_block_mean_ns_p50": 32846.2,
+        "fp32_block_mean_ns_p95": 36537.388,
+        "int8_block_mean_ns_p50": 75594.76000000001,
+        "int8_block_mean_ns_p95": 91706.03600000001,
+        "paired_fp32_over_int8_median": 0.4439656226535342,
+        "paired_ratio_p05": 0.37646067347013323,
+        "paired_ratio_p95": 0.5041164474166531,
+        "paired_ratio_std": 0.043189703139434384,
+        "int8_faster_blocks": 0,
+        "blocks": 20
+      },
+      {
+        "batch": 256,
+        "fp32_block_mean_ns_p50": 124862.29000000001,
+        "fp32_block_mean_ns_p95": 137028.981,
+        "int8_block_mean_ns_p50": 143005.77000000002,
+        "int8_block_mean_ns_p95": 156823.494,
+        "paired_fp32_over_int8_median": 0.8973169130456254,
+        "paired_ratio_p05": 0.7765327166185015,
+        "paired_ratio_p95": 0.9698088368592003,
+        "paired_ratio_std": 0.07388196072454835,
+        "int8_faster_blocks": 1,
+        "blocks": 20
+      }
+    ],
+    "train_seconds": 0.2966668910012231
+  },
+  "repairs_verified": [
+    "Refuse symlinks at any existing output ancestor, including broken final symlinks",
+    "Check both calibration-smoke logit shapes (256,2)"
+  ],
+  "limitations": [
+    "No arbitrary model/checkpoint loader; NPZ files are inspection only.",
+    "Absolute performance varies; independent run timing is evidence, not exact reproducibility.",
+    "Same installed interpreter/dependencies and host, not fresh OS or hardware replication.",
+    "Single synthetic task and fixed model; all three preregistered quality gates fail.",
+    "No production latency, memory RSS, CUDA or distributed inference measurement.",
+    "Host background load is uncontrolled; builder and auditor explicitly avoided concurrent CPU experiments."
+  ]
+}

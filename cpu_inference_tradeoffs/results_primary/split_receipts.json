@@ -1,0 +1,20 @@
+{
+  "train": {
+    "rows": 8192,
+    "positives": 4073,
+    "x_sha256": "dc1fc297eb1a469d082f5b94023964b981e43ca18d3e62e0bd6605f66c00b2a6",
+    "y_sha256": "75bcfba47af2965d76ca8084d5e17a8de7b83b9c1964fac9c2f6ccb0936da782"
+  },
+  "calibration": {
+    "rows": 2048,
+    "positives": 1070,
+    "x_sha256": "09271a41852f782422103c0124044fc0032b311c394bea893559dd11c1a93577",
+    "y_sha256": "99f0ced96ebfbb6d4e87773f114c936ab67ae476bc24877f9ab50787038ef946"
+  },
+  "test": {
+    "rows": 4096,
+    "positives": 2069,
+    "x_sha256": "0d7477a048c9cfa0a0cce1e164f759e8088efc8524675feaf1861f364fb4e291",
+    "y_sha256": "1100bb2ec3f1a171b6879111ea8f098c14d4fcc333a097e1b601184fff4c169c"
+  }
+}
