@@ -1,0 +1,1 @@
+{"kind": "paused_fault", "pid": 25, "token": "91cd6d6a7e384a33817899d824944cd2", "attempt": "attempt2", "saved_progress_step": 64, "optimizer_calls_this_process": 32, "hook": "before_commit", "target_step": 64}

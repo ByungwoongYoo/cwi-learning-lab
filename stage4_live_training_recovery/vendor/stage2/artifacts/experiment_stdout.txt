@@ -1,0 +1,24 @@
+{
+  "status": "PASS_TECHNICAL_TRAINING_AND_RESTART_ONLY",
+  "parity": {
+    "parameters_bitwise_equal": true,
+    "momentum_buffers_bitwise_equal": true,
+    "predictions_bitwise_equal": true,
+    "torch_rng_bitwise_equal": true,
+    "sampler_permutation_bitwise_equal": true,
+    "sampler_rng_exact_equal": true,
+    "loss_history_exact_equal": true,
+    "progress_exact_equal": true,
+    "all_checkpoint_metadata_exact_equal": true,
+    "three_distinct_process_ids": true,
+    "max_parameter_abs_diff": 0.0,
+    "max_prediction_abs_diff": 0.0,
+    "steps": {
+      "full": 128,
+      "interrupted": 37,
+      "resumed_total": 128
+    },
+    "passed": true
+  },
+  "negative_tests": 20
+}

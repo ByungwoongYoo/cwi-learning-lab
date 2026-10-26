@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "scope": "same-runtime single-writer CPU tiny training restart, deterministic barrier interruption",
+  "independent_cases": 45,
+  "added_checkpoint_schedule_rejections": 9,
+  "builder_unit_tests_rerun": 12,
+  "counts_may_overlap_do_not_sum": true,
+  "final_independent_run": {
+    "status": "PASS_LIVE_CPU_TRAINING_RESTART",
+    "launches": [
+      {
+        "attempt": "attempt0",
+        "pid": 23,
+        "token": "5b6dcb52c0564ca1a26d8616a65101c2",
+        "resumed_step": 0,
+        "selected_after": 32,
+        "returncode": -9,
+        "fault": {
+          "hook": "after_backward",
+          "step": 37
+        },
+        "marker": {
+          "kind": "paused_fault",
+          "pid": 23,
+          "token": "5b6dcb52c0564ca1a26d8616a65101c2",
+          "attempt": "attempt0",
+          "saved_progress_step": 36,
+          "optimizer_calls_this_process": 36,
+          "hook": "after_backward",
+          "target_step": 37
+        }
+      },
+      {
+        "attempt": "attempt1",
+        "pid": 24,
+        "token": "82aeb8383f534754b65a7888e8fd3ac5",
+        "resumed_step": 32,
+        "selected_after": 32,
+        "returncode": -9,
+        "fault": {
+          "hook": "after_optimizer",
+          "step": 48
+        },
+        "marker": {
+          "kind": "paused_fault",
+          "pid": 24,
+          "token": "82aeb8383f534754b65a7888e8fd3ac5",
+          "attempt": "attempt1",
+          "saved_progress_step": 47,
+          "optimizer_calls_this_process": 16,
+          "hook": "after_optimizer",
+          "target_step": 48
+        }
+      },
+      {
+        "attempt": "attempt2",
+        "pid": 25,
+        "token": "2c323329daec414cb505fd08d2425bca",
+        "resumed_step": 32,
+        "selected_after": 32,
+        "returncode": -9,
+        "fault": {
+          "hook": "before_commit",
+          "step": 64
+        },
+        "marker": {
+          "kind": "paused_fault",
+          "pid": 25,
+          "token": "2c323329daec414cb505fd08d2425bca",
+          "attempt": "attempt2",
+          "saved_progress_step": 64,
+          "optimizer_calls_this_process": 32,
+          "hook": "before_commit",
+          "target_step": 64
+        }
+      },
+      {
+        "attempt": "attempt3",
+        "pid": 26,
+        "token": "c62cbc771deb49d7bf5d50f6570c28d4",
+        "resumed_step": 32,
+        "selected_after": 64,
+        "returncode": -9,
+        "fault": {
+          "hook": "array_closed",
+          "step": 96
+        },
+        "marker": {
+          "kind": "paused_fault",
+          "pid": 26,
+          "token": "c62cbc771deb49d7bf5d50f6570c28d4",
+          "attempt": "attempt3",
+          "saved_progress_step": 96,
+          "optimizer_calls_this_process": 64,
+          "hook": "array_closed",
+          "target_step": 96
+        }
+      },
+      {
+        "attempt": "attempt4",
+        "pid": 27,
+        "token": "ac136895635d483ab19507f7662f81d5",
+        "resumed_step": 64,
+        "selected_after": 128,
+        "returncode": -9,
+        "fault": {
+          "hook": "published",
+          "step": 128
+        },
+        "marker": {
+          "kind": "paused_fault",
+          "pid": 27,
+          "token": "ac136895635d483ab19507f7662f81d5",
+          "attempt": "attempt4",
+          "saved_progress_step": 128,
+          "optimizer_calls_this_process": 64,
+          "hook": "published",
+          "target_step": 128
+        }
+      }
+    ],
+    "terminal_step": 128,
+    "no_duplicate_terminal_launch": true,
+    "metadata_equal": true,
+    "arrays_equal": {
+      "p0": true,
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "v0": true,
+      "v1": true,
+      "v2": true,
+      "v3": true,
+      "torch_rng": true,
+      "permutation": true
+    },
+    "predictions_equal": true,
+    "second_supervisor_launches": 0,
+    "elapsed_seconds": 12.094558986000266,
+    "limitations": [
+      "fault barriers deterministically pause actual training PID before SIGKILL",
+      "not arbitrary-time fault sampling",
+      "not power-loss durability",
+      "not concurrent writers",
+      "not GPU/distributed",
+      "tiny TRAIN resubstitution, no detection improvement",
+      "AI_ASSISTED; user competence NOT_ASSESSED"
+    ]
+  },
+  "source_sha256": {
+    "live_recovery/worker.py": "2c32a5571c781a8d8b9824fbef055dbfcb54b57207c7b0a67ba17af5a882ad3e",
+    "live_recovery/__main__.py": "377526747e3faaeb246c0d78fd6260613d4cc2c08284f8290b369337590dc12b",
+    "live_recovery/supervisor.py": "08d51dd9ca587873be3864edabdf44cf6cd342a6d78bb64d42e1c84d9cef9721",
+    "live_recovery/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recovery_lab/store.py": "e0594efb73e79ef6b3afa66fa54242f8db9dae6f6c80e2334519c8be899bd067",
+    "recovery_lab/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_supervisor.py": "b2fd5689b6a829918ca012322b018808cdabb76047ddf7051b0ae2a5da9a0c7f"
+  },
+  "baseline_unchanged": {
+    "cwi_checkpoint_recovery_stage3": {
+      "baseline_files": 1054,
+      "changed": 0
+    },
+    "cwi_learning_lab": {
+      "baseline_files": 61,
+      "changed": 0
+    },
+    "cwi_public_release": {
+      "baseline_files": 169,
+      "changed": 0
+    },
+    "cwi_training_lab_stage2": {
+      "baseline_files": 104,
+      "changed": 0
+    }
+  },
+  "limitations": [
+    "Supervisor must remain alive; supervisor restart not implemented",
+    "SIGKILL after deterministic pause barrier, not arbitrary instruction interruption",
+    "No power-loss/fsync/concurrency/GPU/distributed guarantees",
+    "Checkpoint parser exhaustive Stage3 suite not repeated here",
+    "Tiny TRAIN resubstitution; no detector quality improvement or user mastery claim"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-10-25T23:46:56.036289+00:00",
+  "files": {
+    "PROTOCOL.json": "4cdac7e4a4c94ddbb26f4e3dca28017134508d20e1e2387107898810a4c00422",
+    "PROTOCOL_ADDENDUM.md": "550f80e3bbbeedfcf6a427cddc484fb16c78762cc32a3e3714ea334be650a790",
+    "baseline.py": "5df9a7960e6661189a8c9e220c3c1436856e4b60776a9c5b2e66ba3ece3f0934",
+    "models.json": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416",
+    "training_receipt.json": "470637763dea155ee18a9ccfc5cd08d05bb53d5a6985ab740bd938c937f3f269"
+  },
+  "threshold": 0.5,
+  "minimum_component_area": 25,
+  "connectivity": 8,
+  "validation_payload_seen": false
+}

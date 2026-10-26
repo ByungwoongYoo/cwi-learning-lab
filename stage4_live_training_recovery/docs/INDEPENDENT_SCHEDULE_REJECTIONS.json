@@ -1,0 +1,47 @@
+[
+  {
+    "hook": "before_commit",
+    "step": 1,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "before_commit",
+    "step": 37,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "before_commit",
+    "step": 127,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "array_closed",
+    "step": 1,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "array_closed",
+    "step": 37,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "array_closed",
+    "step": 127,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "published",
+    "step": 1,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "published",
+    "step": 37,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  },
+  {
+    "hook": "published",
+    "step": 127,
+    "rejected": "Checkpoint fault must target a multiple of32"
+  }
+]

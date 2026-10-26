@@ -1,0 +1,42 @@
+{
+  "faults": [
+    {
+      "hook": "after_backward",
+      "step": 37
+    },
+    {
+      "hook": "after_optimizer",
+      "step": 48
+    },
+    {
+      "hook": "before_commit",
+      "step": 64
+    },
+    {
+      "hook": "array_closed",
+      "step": 96
+    },
+    {
+      "hook": "published",
+      "step": 128
+    }
+  ],
+  "checkpoint_every": 32,
+  "max_launches": 8,
+  "max_stagnant": 4,
+  "expected_resumes": [
+    0,
+    32,
+    32,
+    32,
+    64
+  ],
+  "expected_selected_after": [
+    32,
+    32,
+    32,
+    64,
+    128
+  ],
+  "limits": "single writer same runtime CPU; not power loss/distributed"
+}

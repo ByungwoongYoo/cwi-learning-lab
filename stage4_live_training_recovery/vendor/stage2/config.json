@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "purpose": "CPU_NEURAL_TRAINING_CHECKPOINT_TECHNICAL_SMOKE_ONLY",
+  "backend": "pytorch",
+  "architecture": [
+    7,
+    16,
+    1
+  ],
+  "activation": "tanh",
+  "dropout": 0.1,
+  "dtype": "float64",
+  "device": "cpu",
+  "threads": 1,
+  "original_ids": [
+    4,
+    6
+  ],
+  "partition": "train",
+  "pixels_per_example": 4096,
+  "sample_seed": 20261026,
+  "model_seed": 1701,
+  "sampler_seed": 1702,
+  "epochs": 4,
+  "batch_size": 256,
+  "optimizer": "SGD",
+  "learning_rate": 0.03,
+  "momentum": 0.9,
+  "weight_decay": 0.0,
+  "checkpoint_step": 37,
+  "score_threshold": 0.5,
+  "feature_names": [
+    "low",
+    "low_minus_mean9",
+    "low_minus_mean31",
+    "high",
+    "high_minus_mean9",
+    "high_minus_mean31",
+    "low_minus_high"
+  ],
+  "authorship": "AI_ASSISTED",
+  "user_competency": "NOT_ASSESSED"
+}

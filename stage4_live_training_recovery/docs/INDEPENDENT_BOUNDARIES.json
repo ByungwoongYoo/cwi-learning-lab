@@ -1,0 +1,274 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "run_name:../escape",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid run name"
+    },
+    {
+      "case": "run_name:/tmp/test",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid run name"
+    },
+    {
+      "case": "run_name:x/y",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid run name"
+    },
+    {
+      "case": "run_name:",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid run name"
+    },
+    {
+      "case": "run_name:.",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid run name"
+    },
+    {
+      "case": "run_name:..",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid run name"
+    },
+    {
+      "case": "run_name:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid run name"
+    },
+    {
+      "case": "max_launches:True",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_launches:False",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_launches:0",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_launches:-1",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_launches:13",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_launches:1.5",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_launches:2",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_launches:None",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:True",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:False",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:0",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:-1",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:9",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:1.5",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:2",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "max_stagnant:None",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid restart limits"
+    },
+    {
+      "case": "plan:None",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:{}",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:x",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:[{}]",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:[{'hook': 'x', 'step': 1}]",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:[{'hook': 'after_backward', 'step': True}]",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:[{'hook': 'after_backward', 'step': 0}]",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:[{'hook': 'after_backward', 'step': 129}]",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "plan:[{'hook': 'after_backward', 'step': 1, 'extra': 2}]",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Invalid plan"
+    },
+    {
+      "case": "matching_marker",
+      "status": "PASS"
+    },
+    {
+      "case": "marker:pid",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Worker marker identity mismatch"
+    },
+    {
+      "case": "marker:token",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Worker marker identity mismatch"
+    },
+    {
+      "case": "marker:attempt",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Worker marker identity mismatch"
+    },
+    {
+      "case": "marker:kind",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Worker marker identity mismatch"
+    },
+    {
+      "case": "marker:hook",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Worker marker identity mismatch"
+    },
+    {
+      "case": "marker:target_step",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Worker marker identity mismatch"
+    },
+    {
+      "case": "exited_child_marker",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Worker exited before kill"
+    },
+    {
+      "case": "all_invalid_no_silent_reset",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "NO_VALID_CHECKPOINT: refusing silent reset"
+    },
+    {
+      "case": "actual_restart_cap",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "RESTART_LIMIT"
+    },
+    {
+      "case": "actual_no_progress_cap",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "NO_PROGRESS_LIMIT"
+    },
+    {
+      "case": "symlink_generation_no_reset",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "NO_VALID_CHECKPOINT: refusing silent reset"
+    },
+    {
+      "case": "outside_root",
+      "status": "PASS_REJECTED",
+      "exception": "StoreError",
+      "message": "Path outside project runs"
+    }
+  ],
+  "count": 45
+}

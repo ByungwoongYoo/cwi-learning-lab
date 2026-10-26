@@ -1,0 +1,19 @@
+test_class_imbalance_explicit (test_training_lab.LabTests.test_class_imbalance_explicit) ... ok
+test_corrupt_checkpoint_rejections (test_training_lab.LabTests.test_corrupt_checkpoint_rejections) ... ok
+test_data_schema_rejects_wrong_counts (test_training_lab.LabTests.test_data_schema_rejects_wrong_counts) ... ok
+test_distinct_processes (test_training_lab.LabTests.test_distinct_processes) ... ok
+test_final_state_exact_equality (test_training_lab.LabTests.test_final_state_exact_equality) ... ok
+test_frozen_scope (test_training_lab.LabTests.test_frozen_scope) ... ok
+test_gradient_all_parameters_synthetic (test_training_lab.LabTests.test_gradient_all_parameters_synthetic) ... ok
+test_loss_finite_not_performance_claim (test_training_lab.LabTests.test_loss_finite_not_performance_claim) ... ok
+test_original_model_freeze_unchanged_when_present (test_training_lab.LabTests.test_original_model_freeze_unchanged_when_present) ... ok
+test_partial_checkpoint_mid_epoch (test_training_lab.LabTests.test_partial_checkpoint_mid_epoch) ... ok
+test_prepare_is_byte_reproducible (test_training_lab.LabTests.test_prepare_is_byte_reproducible) ... ok
+test_sample_ids_fixed_unique (test_training_lab.LabTests.test_sample_ids_fixed_unique) ... ok
+test_scaler_sample_only (test_training_lab.LabTests.test_scaler_sample_only) ... ok
+test_targets_equal_original_mask_samples (test_training_lab.LabTests.test_targets_equal_original_mask_samples) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.218s
+
+OK

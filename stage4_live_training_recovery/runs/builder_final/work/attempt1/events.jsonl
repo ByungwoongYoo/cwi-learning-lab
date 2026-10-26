@@ -1,0 +1,17 @@
+{"attempt": "attempt1", "kind": "started", "optimizer_calls_this_process": 0, "pid": 24, "resumed_from": 32, "saved_progress_step": 32, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 1, "pid": 24, "saved_progress_step": 33, "step": 33, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 2, "pid": 24, "saved_progress_step": 34, "step": 34, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 3, "pid": 24, "saved_progress_step": 35, "step": 35, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 4, "pid": 24, "saved_progress_step": 36, "step": 36, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 5, "pid": 24, "saved_progress_step": 37, "step": 37, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 6, "pid": 24, "saved_progress_step": 38, "step": 38, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 7, "pid": 24, "saved_progress_step": 39, "step": 39, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 8, "pid": 24, "saved_progress_step": 40, "step": 40, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 9, "pid": 24, "saved_progress_step": 41, "step": 41, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 10, "pid": 24, "saved_progress_step": 42, "step": 42, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 11, "pid": 24, "saved_progress_step": 43, "step": 43, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 12, "pid": 24, "saved_progress_step": 44, "step": 44, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 13, "pid": 24, "saved_progress_step": 45, "step": 45, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 14, "pid": 24, "saved_progress_step": 46, "step": 46, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "kind": "step_completed", "optimizer_calls_this_process": 15, "pid": 24, "saved_progress_step": 47, "step": 47, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}
+{"attempt": "attempt1", "hook": "after_optimizer", "kind": "paused_fault", "optimizer_calls_this_process": 16, "pid": 24, "saved_progress_step": 47, "target_step": 48, "token": "18413a44bf0a4bdc8cf4e24ecc66b0f5"}

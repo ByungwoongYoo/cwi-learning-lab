@@ -1,0 +1,29 @@
+{
+  "archive_sha256": "e1b3d2809470d1da0059df064be8e596167d15479d42b1f63fa5aaad7e31f531",
+  "config_sha256": "5646af441474857f99387c1282b38f3c83cd66aaaa443c3a0603a36e064804cf",
+  "counts": {
+    "4": {
+      "partition": "train",
+      "positive_labels": 1,
+      "samples": 4096
+    },
+    "6": {
+      "partition": "train",
+      "positive_labels": 0,
+      "samples": 4096
+    }
+  },
+  "sample_indices_sha256": "5d509ced5c38e8e4cfe1aa901bc79427dcce751fd93b1b9f68bc05db3a1143cf",
+  "schema_version": 1,
+  "source_sha256": {
+    "original_004_40kV.tiff": "fadd189a2397d474ed6d520e755518256e354f64cba92c5f100694e05aab9cab",
+    "original_004_40kV_mask.tiff": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+    "original_004_90kV.tiff": "f6d4559f067d6b528fe16e53a9aaaedb0467f2f59b828afb577c29f28830d122",
+    "original_004_90kV_mask.tiff": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+    "original_006_40kV.tiff": "79eb66bfc0e7d6acb0f483fd6f37c2312bdb04d3b9edea155d7a488461f48888",
+    "original_006_40kV_mask.tiff": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a",
+    "original_006_90kV.tiff": "77fe89e90b1ea38b249bf8d51e1c896aff4a7205912e3a89371475902e5f2dc1",
+    "original_006_90kV_mask.tiff": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a"
+  },
+  "status": "TRAIN_RESUBSTITUTION_ONLY_NOT_GENERALIZATION"
+}

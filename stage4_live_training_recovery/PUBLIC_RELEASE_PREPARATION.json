@@ -1,0 +1,48 @@
+{
+  "added_file": "PUBLIC_RELEASE_PREPARATION.json",
+  "authorship": "AI_ASSISTED",
+  "base_commit_preserved": "87fcaca3497081bbe1efbf0ef16f9033d7d7507e",
+  "code_tests_vendor_arrays_images_execution_receipts_byte_unchanged": true,
+  "deployment": "NOT_DEPLOYED",
+  "derived_integrity_file": {
+    "path": "PACKAGE_SHA256SUMS.json",
+    "policy": "Regenerated over the public directory, excluding itself; original manifest remains in immutable ZIP."
+  },
+  "directory": "stage4_live_training_recovery",
+  "excluded_content": "Only frozen ZIP members copied; no extra working-tree test fixtures, environments, caches or symlinks.",
+  "hugging_face": "HF_NOT_DEPLOYED",
+  "modified_released_documentation": [
+    {
+      "path": "README.md",
+      "public_sha256": "e2732db72159be54b77b16f03a335f4051729a00a0141c924e9fd48361a0f03d",
+      "reason": "Accurate public source status and neutral project description; technical scope unchanged.",
+      "source_sha256": "237044e767ecb29f2fcccdf00391638306394f689b5c04230570b314174e2625"
+    },
+    {
+      "path": "docs/ONE_MINUTE_KO.md",
+      "public_sha256": "11061dcf9700cf730d35cb8b86b72042a11b25fa8427ebce8dcbd4218333dc7d",
+      "reason": "Accurate public source status and neutral project description; technical scope unchanged.",
+      "source_sha256": "0a7326abdce2da138925600b3d5565b5ee90325441941b5130e1ddfc41e02369"
+    }
+  ],
+  "original_repository_files_unchanged": 432,
+  "privacy_review": {
+    "actual_private_workspace_paths": 0,
+    "credentials_or_secret_like_strings": 0,
+    "generic_tmp_test_inputs": "Preserved as intentional rejected-path test inputs.",
+    "marker_tokens": "Random local failpoint/attempt matching identifiers in the published experiment receipts; not account credentials.",
+    "private_conversation_identifiers": 0,
+    "symlink_members": 0
+  },
+  "scope": "Tiny same-runtime CPU; surviving supervisor restarts actual training child processes at fixed barriers. No supervisor-crash recovery, arbitrary optimizer interruption, power-loss durability, concurrent-writer, GPU, distributed or detection-performance claim.",
+  "source_package_manifest_sha256": "1424ef8ee9645e3c475c382e8d6d3be1224e9ec382f73ea7d91e33c5285c34ae",
+  "source_zip_bytes": 12995391,
+  "source_zip_filename": "cwi_live_training_recovery_stage4_20261026.zip",
+  "source_zip_members_retained": 225,
+  "source_zip_regular_files": 225,
+  "source_zip_sha256": "d02bf049ee30496b7a427f635d03071f71cad576ac5be7e6013a7766f5c9e39a",
+  "status": "PUBLIC_SOURCE_ADDITION",
+  "user_competency": "NOT_ASSESSED",
+  "verification_scope": "Public-copy byte identity and targeted privacy/path checks. Historical runtime results remain in original audit receipts; not a comprehensive security certification.",
+  "workflow_added": false
+}

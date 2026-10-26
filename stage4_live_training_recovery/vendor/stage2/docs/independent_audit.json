@@ -1,0 +1,534 @@
+{
+  "prospective_observation": {
+    "observed_utc": "2026-10-26T04:12:50.156423+00:00",
+    "config_sha256": "5646af441474857f99387c1282b38f3c83cd66aaaa443c3a0603a36e064804cf",
+    "config": {
+      "schema_version": 1,
+      "purpose": "CPU_NEURAL_TRAINING_CHECKPOINT_TECHNICAL_SMOKE_ONLY",
+      "backend": "pytorch",
+      "architecture": [
+        7,
+        16,
+        1
+      ],
+      "activation": "tanh",
+      "dropout": 0.1,
+      "dtype": "float64",
+      "device": "cpu",
+      "threads": 1,
+      "original_ids": [
+        4,
+        6
+      ],
+      "partition": "train",
+      "pixels_per_example": 4096,
+      "sample_seed": 20261026,
+      "model_seed": 1701,
+      "sampler_seed": 1702,
+      "epochs": 4,
+      "batch_size": 256,
+      "optimizer": "SGD",
+      "learning_rate": 0.03,
+      "momentum": 0.9,
+      "weight_decay": 0.0,
+      "checkpoint_step": 37,
+      "score_threshold": 0.5,
+      "feature_names": [
+        "low",
+        "low_minus_mean9",
+        "low_minus_mean31",
+        "high",
+        "high_minus_mean9",
+        "high_minus_mean31",
+        "low_minus_high"
+      ],
+      "authorship": "AI_ASSISTED",
+      "user_competency": "NOT_ASSESSED"
+    },
+    "stage2_artifacts_present": [
+      "cwi_training_lab_stage2/artifacts/torch_install.txt",
+      "cwi_training_lab_stage2/artifacts/torch_install_attempt.txt"
+    ]
+  },
+  "provenance": {
+    "checked_utc": "2026-10-26T04:12:33.412008+00:00",
+    "source": "bundled Stage1 only; original frozen split CSV metadata",
+    "payload_files": 8,
+    "lineages": [
+      4,
+      6
+    ],
+    "checks": [
+      {
+        "name": "original_006_40kV.tiff",
+        "passed": true,
+        "sha256": "79eb66bfc0e7d6acb0f483fd6f37c2312bdb04d3b9edea155d7a488461f48888",
+        "Original_ID": 6,
+        "partition": "train"
+      },
+      {
+        "name": "original_006_40kV_mask.tiff",
+        "passed": true,
+        "sha256": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a",
+        "Original_ID": 6,
+        "partition": "train"
+      },
+      {
+        "name": "original_004_40kV.tiff",
+        "passed": true,
+        "sha256": "fadd189a2397d474ed6d520e755518256e354f64cba92c5f100694e05aab9cab",
+        "Original_ID": 4,
+        "partition": "train"
+      },
+      {
+        "name": "original_004_40kV_mask.tiff",
+        "passed": true,
+        "sha256": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+        "Original_ID": 4,
+        "partition": "train"
+      },
+      {
+        "name": "original_006_90kV.tiff",
+        "passed": true,
+        "sha256": "77fe89e90b1ea38b249bf8d51e1c896aff4a7205912e3a89371475902e5f2dc1",
+        "Original_ID": 6,
+        "partition": "train"
+      },
+      {
+        "name": "original_006_90kV_mask.tiff",
+        "passed": true,
+        "sha256": "5f41b3626de1b977c633301df307d14a4ce2dfb8b255b2222c2741ad2163a60a",
+        "Original_ID": 6,
+        "partition": "train"
+      },
+      {
+        "name": "original_004_90kV.tiff",
+        "passed": true,
+        "sha256": "f6d4559f067d6b528fe16e53a9aaaedb0467f2f59b828afb577c29f28830d122",
+        "Original_ID": 4,
+        "partition": "train"
+      },
+      {
+        "name": "original_004_90kV_mask.tiff",
+        "passed": true,
+        "sha256": "af958c02321bdceca288a3fb115907600cef920ef975c4aa1c197bc91192631c",
+        "Original_ID": 4,
+        "partition": "train"
+      }
+    ],
+    "future_data_payload_read": false
+  },
+  "synthetic": {
+    "checked_utc": "2026-10-26T04:19:00.756166+00:00",
+    "scope": "independent synthetic-only test, no real-data fitting",
+    "parameter_count": 145,
+    "training_dropout_probability": 0.1,
+    "finite_difference_fixed_dropout_rng_max_absolute_error": 1.1544256522943996e-10,
+    "finite_difference_tolerance": 1e-08,
+    "two_step_sgd_max_parameter_error": 6.938893903907228e-18,
+    "two_step_sgd_max_momentum_error": 0.0,
+    "gradients_cleared_between_steps": true,
+    "parameters_changed": true,
+    "passed": true,
+    "torch": "2.6.0+cpu",
+    "cuda_version": null,
+    "torch_cuda_available": false,
+    "source_hashes": {
+      "training_lab/common.py": "bbf725c49b7da06dfb28d7c071fe257d57f0f32f8142f2daaedcda0f1cb456aa",
+      "training_lab/data.py": "736b9509d88ed64a79c8ba7a14aa01eea3613705a70712793d151c657a23996a",
+      "training_lab/train.py": "c0965b489375d2722fb18dd1ff4ab04e1b58efeab51028567d665aedba07a48d"
+    }
+  },
+  "artifacts": {
+    "checked_utc": "2026-10-26T04:19:01.644196+00:00",
+    "scope": "independent artifact+sample reconstruction, no real optimizer rerun",
+    "checks": [
+      {
+        "check": "prospective_config_unchanged",
+        "passed": true
+      },
+      {
+        "check": "frozen_data_binding",
+        "passed": true
+      },
+      {
+        "check": "prospective_observation_before_pretraining",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_006_40kV_mask.tiff",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_006_90kV_mask.tiff",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_004_90kV_mask.tiff",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_004_40kV.tiff",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_006_40kV.tiff",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_004_90kV.tiff",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_004_40kV_mask.tiff",
+        "passed": true
+      },
+      {
+        "check": "source_byte_identical_original_006_90kV.tiff",
+        "passed": true
+      },
+      {
+        "check": "independent_sample_scaler_x",
+        "passed": true
+      },
+      {
+        "check": "independent_sample_scaler_y",
+        "passed": true
+      },
+      {
+        "check": "independent_sample_scaler_mean",
+        "passed": true
+      },
+      {
+        "check": "independent_sample_scaler_scale",
+        "passed": true
+      },
+      {
+        "check": "independent_sample_scaler_indices",
+        "passed": true
+      },
+      {
+        "check": "only_one_positive_sample",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_metadata_equal",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_torch_rng",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_permutation",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_p0",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_v0",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_p1",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_v1",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_p2",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_v2",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_p3",
+        "passed": true
+      },
+      {
+        "check": "checkpoint_array_bitwise_v3",
+        "passed": true
+      },
+      {
+        "check": "predictions_bitwise_equal",
+        "passed": true
+      },
+      {
+        "check": "all_negative_at_frozen_threshold",
+        "passed": true
+      },
+      {
+        "check": "fresh_process_receipts_distinct",
+        "passed": true,
+        "details": {
+          "uninterrupted": 9,
+          "interrupted": 10,
+          "resumed": 11
+        }
+      },
+      {
+        "check": "37_plus91_matches128",
+        "passed": true
+      },
+      {
+        "check": "mid_epoch_position",
+        "passed": true
+      },
+      {
+        "check": "final_position",
+        "passed": true
+      },
+      {
+        "check": "resource_ram_under2gib",
+        "passed": true,
+        "details": 287492
+      }
+    ],
+    "passed": true,
+    "proof_sha256": "5169f8f82b9551036886fcc6e2eff0e640d9d95b89344ac89f0d90487b24853c",
+    "peak_training_process_rss_kib": 287492,
+    "observed_train_only_confusion": {
+      "FN": 1,
+      "FP": 0,
+      "TN": 8191,
+      "TP": 0
+    }
+  },
+  "formats": {
+    "checked_utc": "2026-10-26T04:18:19.568296+00:00",
+    "cases": [
+      {
+        "name": "unknown_top_key",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Unexpected schema keys"
+      },
+      {
+        "name": "boolean_schema_version",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Checkpoint schema/version mismatch"
+      },
+      {
+        "name": "boolean_optimizer_zero",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Runtime/optimizer mismatch"
+      },
+      {
+        "name": "integer_optimizer_false",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Runtime/optimizer mismatch"
+      },
+      {
+        "name": "boolean_step",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid progress"
+      },
+      {
+        "name": "negative_loss",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid losses"
+      },
+      {
+        "name": "boolean_initial_loss",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid initial loss"
+      },
+      {
+        "name": "wrong_loss_count",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid losses"
+      },
+      {
+        "name": "even_pcg_increment",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid sampler RNG"
+      },
+      {
+        "name": "boolean_pcg_has_uint32",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid sampler RNG"
+      },
+      {
+        "name": "overflow_json_float",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid initial loss"
+      },
+      {
+        "name": "oversized_json",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "JSON exceeds size bound"
+      },
+      {
+        "name": "nan_momentum_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Nonfinite array"
+      },
+      {
+        "name": "infinite_parameter_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Nonfinite array"
+      },
+      {
+        "name": "negative_permutation_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid permutation"
+      },
+      {
+        "name": "invalid_torch_rng_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid RNG payload"
+      },
+      {
+        "name": "object_dtype_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Array shape/dtype mismatch"
+      },
+      {
+        "name": "fortran_layout_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Array shape/dtype mismatch"
+      },
+      {
+        "name": "wrong_rng_dtype_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Array shape/dtype mismatch"
+      },
+      {
+        "name": "archive_path_traversal_name",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Unexpected archive member"
+      },
+      {
+        "name": "archive_duplicate_member",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Archive member count mismatch"
+      },
+      {
+        "name": "archive_unexpected_member",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Archive member count mismatch"
+      },
+      {
+        "name": "decoded_archive_size_bomb",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Decoded archive too large"
+      },
+      {
+        "name": "encoded_archive_size_bound",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Archive exceeds size bound"
+      },
+      {
+        "name": "truncated_array_body_rehashed",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Invalid NPZ archive"
+      },
+      {
+        "name": "dataset_boolean_schema",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Dataset binding mismatch"
+      },
+      {
+        "name": "dataset_bad_status",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Dataset count/status mismatch"
+      },
+      {
+        "name": "dataset_incorrect_count",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Dataset count/status mismatch"
+      },
+      {
+        "name": "dataset_boolean_positive_count",
+        "rejected": true,
+        "exception": "FormatError",
+        "reason": "Dataset count/status mismatch"
+      }
+    ],
+    "total": 29,
+    "all_rejected": true,
+    "fixture_scope": "temporary copies of final checkpoint/data; unchanged original proof",
+    "source_hashes": {
+      "training_lab/common.py": "bbf725c49b7da06dfb28d7c071fe257d57f0f32f8142f2daaedcda0f1cb456aa",
+      "training_lab/data.py": "736b9509d88ed64a79c8ba7a14aa01eea3613705a70712793d151c657a23996a",
+      "training_lab/train.py": "c0965b489375d2722fb18dd1ff4ab04e1b58efeab51028567d665aedba07a48d"
+    }
+  },
+  "audit_status": "PASS_TECHNICAL_ONLY",
+  "audit_completed_utc": "2026-10-26T04:21:53.475437+00:00",
+  "auditor": "independent AI agent; not human certification",
+  "real_data_optimizer_runs_by_auditor": 0,
+  "future_data_payload_read": false,
+  "source_sha256": {
+    "training_lab/__init__.py": "549a73016ef415f01b5bf55b21e9a1ac65514bb61e289fcc25902a8de27528c3",
+    "training_lab/common.py": "bbf725c49b7da06dfb28d7c071fe257d57f0f32f8142f2daaedcda0f1cb456aa",
+    "training_lab/data.py": "736b9509d88ed64a79c8ba7a14aa01eea3613705a70712793d151c657a23996a",
+    "training_lab/train.py": "c0965b489375d2722fb18dd1ff4ab04e1b58efeab51028567d665aedba07a48d",
+    "training_lab/verify.py": "3d7fd8262d92511be773e3d61c28646ff870ac4e9cb98903747e3af7fe591c6f"
+  },
+  "not_established": [
+    "generalization",
+    "successful bone detection",
+    "full 87-example training",
+    "GPU",
+    "distributed training",
+    "public deployment",
+    "user independent competence",
+    "cross-platform bitwise replay",
+    "authenticity against attacker replacing hashes and files"
+  ],
+  "saved_model_recomputation": {
+    "checked_utc": "2026-10-26T04:21:16.205432+00:00",
+    "no_optimizer_steps": true,
+    "all_parameter_arrays_changed_from_fixed_initialization": true,
+    "all_momentum_buffers_nonzero": true,
+    "saved_weights_recompute_predictions_byte_exactly": true,
+    "recomputed_training_loss_exactly_matches_summary": true,
+    "training_loss": 0.005708238111065788,
+    "passed": true
+  },
+  "final_document_review": {
+    "checked_utc": "2026-10-26T04:21:53.464894+00:00",
+    "local_markdown_links_resolve": true,
+    "train_only_imbalance_failure_prominent": true,
+    "one_physical_Chicken1_fillet_explicit": true,
+    "worked_explanations_not_quiz": true,
+    "AI_ASSISTED_and_NOT_ASSESSED": true,
+    "license_full_text_retrieval": "BLOCKED_HTTP_403; official full-text links and notice retained; no workaround",
+    "original_stage1_zip_sha256": "6f0c6f857618ea9169da4e07404ddd08e1f96bd3127869ac72cedc478cbc67f7",
+    "original_stage1_model_sha256": "0b6bce8f46b677c834048994c3ea72cba26e4d6a4172cd88018190ed7cbb9416"
+  }
+}

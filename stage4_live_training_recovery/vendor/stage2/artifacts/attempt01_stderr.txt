@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<PROJECT_ROOT>/training_lab/verify.py", line 98, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "<PROJECT_ROOT>/training_lab/verify.py", line 97, in main
+    p=argparse.ArgumentParser();p.add_argument('--out',required=True);a=p.parse_args();r=experiment(a.out);print(json.dumps({'status':r['status'],'parity':r['parity'],'negative_tests':len(r['negative_checkpoint_tests'])},indent=2))
+                                                                                         ^^^^^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>/training_lab/verify.py", line 81, in experiment
+    if result.returncode: raise RuntimeError(f'{label} failed: {result.stderr}')
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: uninterrupted failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<PROJECT_ROOT>/training_lab/train.py", line 118, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "<PROJECT_ROOT>/training_lab/train.py", line 117, in main
+    print(json.dumps(run(args.data,args.out,args.stop_step,args.resume),sort_keys=True))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>/training_lab/train.py", line 77, in run
+    setup(c);a,dm=load_data(data_dir)
+                  ^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>/training_lab/data.py", line 65, in load_data
+    a=checked_npz(Path(folder)/'data.npz',m['archive_sha256'],DATA_SPECS)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>/training_lab/common.py", line 47, in checked_npz
+    shape,fortran,dtype=np.lib.format._read_array_header(f,ver,max_header_size=4096)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'numpy.lib.format' has no attribute '_read_array_header'. Did you mean: 'read_array_header_1_0'?
+
