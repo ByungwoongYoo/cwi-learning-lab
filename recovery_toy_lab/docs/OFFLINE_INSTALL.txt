@@ -1,0 +1,6 @@
+WARNING: The directory '<local pip cache>' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing ./recovery_tool_release/dist/recovery_toy_lab-0.1.0-py3-none-any.whl
+Installing collected packages: recovery-toy-lab
+Successfully installed recovery-toy-lab-0.1.0
+
+Sanitization: only the local cache path in a warning was generalized. Original install succeeded without index/dependencies.

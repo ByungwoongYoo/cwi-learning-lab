@@ -1,0 +1,42 @@
+{
+  "added_file": "PUBLIC_RELEASE_PREPARATION.json",
+  "authorship": "AI_ASSISTED",
+  "base_commit_preserved": "e3a0f578f551b273408eab4df5113c123541683e",
+  "dependencies_bundled": false,
+  "deployment": "NOT_DEPLOYED",
+  "derived_integrity_file": {
+    "path": "SHA256SUMS.txt",
+    "policy": "Regenerated over the public directory excluding itself; original manifest preserved in immutable ZIP."
+  },
+  "directory": "recovery_toy_lab",
+  "distribution_source_consistency": "Wheel Python files and sdist shared files exactly match released source; README unchanged, therefore no distribution rebuild required.",
+  "modified_released_files": [
+    {
+      "path": "docs/BUILD.txt",
+      "public_sha256": "486b386a68936a7f3cab3bf51d5f96eafa536e2065b4f58019fec4c4b833f964",
+      "reason": "Generalized one local Python site-packages prefix in a warning; warning and build result preserved.",
+      "source_sha256": "2446b500a50d23524857d24400cfd29226dc434c922fcf253dc156340d527df2"
+    }
+  ],
+  "original_repository_files_unchanged": 658,
+  "privacy_review": {
+    "credentials_or_private_key_patterns": 0,
+    "outer_or_distribution_symlinks": 0,
+    "private_conversation_identifiers": 0,
+    "private_paths_remaining": 0,
+    "scope": "Targeted checks of source, docs, wheel and sdist members; not exhaustive security certification."
+  },
+  "publication": "Existing public GitHub repository files only. Original README describes local artifact construction; no PyPI registration or new external service publication.",
+  "pypi_published": false,
+  "scope": "One fixed Linux CPU PyTorch/NumPy synthetic adapter. 8192 balanced synthetic rows; owned training processes killed at five fixed barriers and resumed. No production, general framework, GPU, power-loss or distributed guarantee.",
+  "source_integrity_manifest_sha256": "5bf88c66fae82036c651f6a67e160f3c2c2151fd407cca6166dd9c15c4bc9684",
+  "source_readme_code_tests_wheel_sdist_runtime_results_byte_unchanged": true,
+  "source_zip_bytes": 64270,
+  "source_zip_filename": "recovery_toy_lab_20261026.zip",
+  "source_zip_members_retained": 28,
+  "source_zip_regular_files": 28,
+  "source_zip_sha256": "c669af2f3110eab69c769b2fe8678d75784d5fe4bd7a129a64877355ff837c87",
+  "status": "PUBLIC_SOURCE_ADDITION",
+  "user_competency": "NOT_ASSESSED",
+  "workflow_added": false
+}

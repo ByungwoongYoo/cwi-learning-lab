@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "scope": "Independent packaging and reproducibility audit; fixed synthetic adapter only",
+  "checks": [
+    {
+      "name": "install",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "help",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "doctor",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "invalid_command",
+      "returncode": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "missing_argument",
+      "returncode": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "missing_parent",
+      "returncode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "bad_name",
+      "returncode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "symlink_parent",
+      "returncode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "parent_traversal",
+      "returncode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "full_demo",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "no_overwrite",
+      "returncode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "inspect",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "installed_entrypoint",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "no_dependencies_help",
+      "returncode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "no_dependencies_doctor",
+      "returncode": 3,
+      "expected": 3,
+      "passed": true
+    },
+    {
+      "name": "no_dependencies_demo",
+      "returncode": 3,
+      "expected": 3,
+      "passed": true
+    }
+  ],
+  "sdist": {
+    "sdist_safe_extract": true,
+    "offline_wheel_build": true,
+    "rebuilt_package_sources_exact": true,
+    "wheel_sha256": "714147a50e982dc7f2c386aebc92e039401af69b846c27eab38905a6712b6f5a",
+    "sdist_sha256": "3c7c601ead7af261a3b666f2baf4dcd88c99741e50b0749d929fdaa781254e2d"
+  },
+  "full_demo_seconds": 10.957848132000436,
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.6.0+cpu",
+    "numpy": "2.3.5",
+    "platform": "linux"
+  },
+  "source_hashes": {
+    "recovery_tool/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "recovery_tool/__main__.py": "7159f0c6f010a321adb292c02fc72dbcc8118154ee81af36f6db4e7a553725f2",
+    "recovery_tool/common.py": "efafb9a67454e5a725e8870d3ff907a5f30de46e39dad926dc8f614d9d124a6c",
+    "recovery_tool/data.py": "95aefb569148404446469029e9d2e08cf99d53404252446cb3339c9bbbdf53b6",
+    "recovery_tool/store.py": "619b7b240eeeabe7240741345ebdbed18c692e22b8b44231f156a21413c17f05",
+    "recovery_tool/supervisor.py": "5967bb7763030ce45900e1e08a10985831b17ea41f50288ff72376fd4a2fe4a3",
+    "recovery_tool/train.py": "264ceb0385721ec75987508e14071ba6cceacfd185baebe5e8f3df7c6dce7186",
+    "recovery_tool/worker.py": "81d308482838a0a93ddfdfbbd3fd5e6cfbf997e2dc7f95e560ed3b3b27ee4130",
+    "setup.py": "78b265ffd9cf163d289e4a697bdfb4ff46678f4a86e57b2ee111f5df8a2a29b9"
+  },
+  "baseline_manifests_verified": {
+    "cwi_public_release": {
+      "verified_listed_files": 168,
+      "manifest_sha256": "e96459c6142bf954693c601194e627adffd74aa19f3f6ab4d0d4e0ff33600adf"
+    },
+    "cwi_stage3_public_release/stage3_checkpoint_recovery": {
+      "verified_listed_files": 262,
+      "manifest_sha256": "127e612f7cb04a25226028f91e31a9d6ca98d067ed31b20d0beac880d693eae0"
+    },
+    "cwi_stage4_release": {
+      "verified_listed_files": 224,
+      "manifest_sha256": "1424ef8ee9645e3c475c382e8d6d3be1224e9ec382f73ea7d91e33c5285c34ae"
+    }
+  },
+  "runtime_assertions": {
+    "five_distinct_training_pids_sigkill": true,
+    "balanced_synthetic_4096_each": true,
+    "metadata_all_arrays_predictions_exact": true,
+    "terminal_relaunch_zero": true,
+    "existing_output_unchanged_on_rejection": true,
+    "wheel_sources_equal_final_source": true
+  },
+  "unit_tests_rerun": 12,
+  "limits": [
+    "Not a fresh OS or dependency installation: existing Python environment and dependencies reused.",
+    "Fixed fault barriers, live supervisor, single writer CPU.",
+    "No power-loss, arbitrary-time failure, GPU, distributed, other-version or user-competence claims.",
+    "No implemented network clients; no OS-level network-isolation audit.",
+    "Direct CLI is supported; internal modules are not a general adapter API."
+  ]
+}

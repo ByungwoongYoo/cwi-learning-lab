@@ -1,0 +1,157 @@
+{
+  "status": "PASS_LIVE_CPU_TRAINING_RESTART",
+  "launches": [
+    {
+      "attempt": "attempt0",
+      "pid": 19,
+      "token": "918be5f989a54a6fb4e0a7d40491e3a0",
+      "resumed_step": 0,
+      "selected_after": 32,
+      "returncode": -9,
+      "fault": {
+        "hook": "after_backward",
+        "step": 37
+      },
+      "marker": {
+        "kind": "paused_fault",
+        "pid": 19,
+        "token": "918be5f989a54a6fb4e0a7d40491e3a0",
+        "attempt": "attempt0",
+        "saved_progress_step": 36,
+        "optimizer_calls_this_process": 36,
+        "hook": "after_backward",
+        "target_step": 37
+      }
+    },
+    {
+      "attempt": "attempt1",
+      "pid": 20,
+      "token": "8fc7940b43c145b98fd95cf5e449f09b",
+      "resumed_step": 32,
+      "selected_after": 32,
+      "returncode": -9,
+      "fault": {
+        "hook": "after_optimizer",
+        "step": 48
+      },
+      "marker": {
+        "kind": "paused_fault",
+        "pid": 20,
+        "token": "8fc7940b43c145b98fd95cf5e449f09b",
+        "attempt": "attempt1",
+        "saved_progress_step": 47,
+        "optimizer_calls_this_process": 16,
+        "hook": "after_optimizer",
+        "target_step": 48
+      }
+    },
+    {
+      "attempt": "attempt2",
+      "pid": 21,
+      "token": "d779aae4ee404273b26b0fa0014ccc6c",
+      "resumed_step": 32,
+      "selected_after": 32,
+      "returncode": -9,
+      "fault": {
+        "hook": "before_commit",
+        "step": 64
+      },
+      "marker": {
+        "kind": "paused_fault",
+        "pid": 21,
+        "token": "d779aae4ee404273b26b0fa0014ccc6c",
+        "attempt": "attempt2",
+        "saved_progress_step": 64,
+        "optimizer_calls_this_process": 32,
+        "hook": "before_commit",
+        "target_step": 64
+      }
+    },
+    {
+      "attempt": "attempt3",
+      "pid": 22,
+      "token": "825234c75ecc49879bd91957bcb41634",
+      "resumed_step": 32,
+      "selected_after": 64,
+      "returncode": -9,
+      "fault": {
+        "hook": "array_closed",
+        "step": 96
+      },
+      "marker": {
+        "kind": "paused_fault",
+        "pid": 22,
+        "token": "825234c75ecc49879bd91957bcb41634",
+        "attempt": "attempt3",
+        "saved_progress_step": 96,
+        "optimizer_calls_this_process": 64,
+        "hook": "array_closed",
+        "target_step": 96
+      }
+    },
+    {
+      "attempt": "attempt4",
+      "pid": 23,
+      "token": "5b48e4f9b7cd4b4fac71aa6c8b47f7cc",
+      "resumed_step": 64,
+      "selected_after": 128,
+      "returncode": -9,
+      "fault": {
+        "hook": "published",
+        "step": 128
+      },
+      "marker": {
+        "kind": "paused_fault",
+        "pid": 23,
+        "token": "5b48e4f9b7cd4b4fac71aa6c8b47f7cc",
+        "attempt": "attempt4",
+        "saved_progress_step": 128,
+        "optimizer_calls_this_process": 64,
+        "hook": "published",
+        "target_step": 128
+      }
+    }
+  ],
+  "terminal_step": 128,
+  "no_duplicate_terminal_launch": true,
+  "metadata_equal": true,
+  "arrays_equal": {
+    "p0": true,
+    "p1": true,
+    "p2": true,
+    "p3": true,
+    "v0": true,
+    "v1": true,
+    "v2": true,
+    "v3": true,
+    "torch_rng": true,
+    "permutation": true
+  },
+  "predictions_equal": true,
+  "second_supervisor_launches": 0,
+  "elapsed_seconds": 10.550661400000536,
+  "limitations": [
+    "fault barriers deterministically pause actual training PID before SIGKILL",
+    "not arbitrary-time fault sampling",
+    "not power-loss durability",
+    "not concurrent writers",
+    "not GPU/distributed",
+    "synthetic toy training only; no detection performance or general framework claim",
+    "AI_ASSISTED; user competence NOT_ASSESSED"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "linux",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "torch": "2.6.0+cpu"
+    },
+    "status": "PASS"
+  },
+  "dataset": {
+    "kind": "synthetic",
+    "rows": 8192,
+    "positive": 4096,
+    "negative": 4096
+  }
+}
