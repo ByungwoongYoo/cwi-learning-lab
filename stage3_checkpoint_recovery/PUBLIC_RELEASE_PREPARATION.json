@@ -1,0 +1,48 @@
+{
+  "added_file": "PUBLIC_RELEASE_PREPARATION.json",
+  "authorship": "AI_ASSISTED",
+  "base_commit_preserved": "26e66b403f889a2b4f5d5d3836d97938f738f73f",
+  "code_tests_vendor_arrays_images_execution_receipts_byte_unchanged": true,
+  "deployment": "NOT_DEPLOYED",
+  "derived_integrity_file": {
+    "path": "PACKAGE_SHA256SUMS.json",
+    "policy": "Regenerated over the public directory, excluding itself; original source manifest remains inside immutable ZIP."
+  },
+  "directory": "stage3_checkpoint_recovery",
+  "excluded_working_tree_content": "Only selected frozen ZIP members copied. No extra working-tree symlink/hardlink/oversized test fixtures, environments or caches. Frozen legitimate incomplete/corrupt checkpoint evidence retained and labeled.",
+  "gpu_or_distributed_claim": false,
+  "hugging_face": "HF_NOT_DEPLOYED",
+  "modified_released_documentation": [
+    {
+      "path": "README.md",
+      "public_sha256": "4713d446d258490020186758b9405f9c8798881afa8004093e77657baa1d8f16",
+      "reason": "Public status and precise writer-only scope; neutral, non-personal presentation.",
+      "source_sha256": "40be6d5031dc23cf704acab3cb3cc89315c1299287e06a8d126e338347257e96"
+    },
+    {
+      "path": "docs/ONE_MINUTE_KO.md",
+      "public_sha256": "a42eb513579fe0dcb4fc78d5d250205c3d056caad58cec66ea53b9dd4e719bf8",
+      "reason": "Public status and precise writer-only scope; neutral, non-personal presentation.",
+      "source_sha256": "8ff26dbc0abab66f09890acf477a6cc0366bb5c601d1c9c2059d3e2e2b875842"
+    }
+  ],
+  "new_detector_or_algorithm_claim": false,
+  "original_repository_files_unchanged": 169,
+  "privacy_review": {
+    "actual_private_workspace_paths": 0,
+    "credentials_or_secret_like_strings": 0,
+    "generic_tmp_test_inputs": "Preserved as intentional rejected-path test inputs, not private environment paths.",
+    "private_conversation_identifiers": 0,
+    "symlink_members": 0
+  },
+  "source_package_manifest_sha256": "530b516ea221306125a1491789e61acd3cf277bc91978f5c1c4a451f8a549a29",
+  "source_zip_bytes": 13878377,
+  "source_zip_filename": "cwi_checkpoint_recovery_stage3_20261026.zip",
+  "source_zip_members_retained": 262,
+  "source_zip_regular_files": 262,
+  "source_zip_sha256": "f1ac629bb112f4f7d8a96ed4b088ee76cbb8e3eb9f73a57b684696632743c956",
+  "status": "PUBLIC_SOURCE_ADDITION",
+  "user_competency": "NOT_ASSESSED",
+  "verification_scope": "Public-copy preparation and byte identity checks; historical runtime results remain in original audit receipts. Not a comprehensive security certification.",
+  "workflow_added": false
+}

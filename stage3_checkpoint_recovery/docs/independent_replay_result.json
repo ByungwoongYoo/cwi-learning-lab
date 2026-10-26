@@ -1,0 +1,458 @@
+{
+  "status": "PASS_SINGLE_PROCESS_CPU_RECOVERY",
+  "run": "audit_final_replay_20261026",
+  "elapsed_seconds": 19.505359897000744,
+  "parity": {
+    "metadata_equal": true,
+    "arrays_equal": {
+      "p0": true,
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "v0": true,
+      "v1": true,
+      "v2": true,
+      "v3": true,
+      "torch_rng": true,
+      "permutation": true
+    },
+    "passed": true
+  },
+  "predictions_equal": true,
+  "resumes": [
+    {
+      "target_step": 37,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 48,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-ec324c042db24b8eb7992233e1991558",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 64,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-ebb722f19039413b84314d884760d768",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-ec324c042db24b8eb7992233e1991558",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 96,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-ebb722f19039413b84314d884760d768",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-ec324c042db24b8eb7992233e1991558",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": "g000064",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 128,
+      "selected_step": 96,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          },
+          {
+            "name": "g000096",
+            "step": 96
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-ebb722f19039413b84314d884760d768",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-ec324c042db24b8eb7992233e1991558",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": "g000064",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": {
+          "name": "g000096",
+          "step": 96
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    }
+  ],
+  "faults": [
+    {
+      "step": 37,
+      "hook": "array_closed",
+      "observed": "array_closed",
+      "after": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-ec324c042db24b8eb7992233e1991558",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "step": 48,
+      "hook": "validated",
+      "observed": "validated",
+      "after": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-ebb722f19039413b84314d884760d768",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-ec324c042db24b8eb7992233e1991558",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "step": 96,
+      "hook": "published",
+      "observed": "published",
+      "after": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          },
+          {
+            "name": "g000096",
+            "step": 96
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-ebb722f19039413b84314d884760d768",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-ec324c042db24b8eb7992233e1991558",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": "g000064",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": {
+          "name": "g000096",
+          "step": 96
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    }
+  ],
+  "final_store": {
+    "valid": [
+      {
+        "name": "g000032",
+        "step": 32
+      },
+      {
+        "name": "g000096",
+        "step": 96
+      },
+      {
+        "name": "g000128",
+        "step": 128
+      }
+    ],
+    "invalid": [
+      {
+        "name": ".pending-ebb722f19039413b84314d884760d768",
+        "reason": "Noncanonical or incomplete generation name"
+      },
+      {
+        "name": ".pending-ec324c042db24b8eb7992233e1991558",
+        "reason": "Noncanonical or incomplete generation name"
+      },
+      {
+        "name": "g000064",
+        "reason": "FormatError: Archive SHA256 mismatch"
+      }
+    ],
+    "selected": {
+      "name": "g000128",
+      "step": 128
+    },
+    "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+  },
+  "commands": [
+    {
+      "label": "reference",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "audit_final_replay_20261026",
+        "--output",
+        "reference_output",
+        "--stop",
+        "128"
+      ],
+      "pid": 6,
+      "returncode": 0
+    },
+    {
+      "label": "first32",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "audit_final_replay_20261026",
+        "--output",
+        "first32_output",
+        "--stop",
+        "32"
+      ],
+      "pid": 7,
+      "returncode": 0
+    },
+    {
+      "label": "segment37",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "audit_final_replay_20261026",
+        "--output",
+        "segment37_output",
+        "--stop",
+        "37",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 8,
+      "returncode": 0
+    },
+    {
+      "label": "writer37",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_commit",
+        "--run",
+        "audit_final_replay_20261026",
+        "--source",
+        "segment37_output"
+      ],
+      "pid": 9,
+      "returncode": -9
+    },
+    {
+      "label": "segment48",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "audit_final_replay_20261026",
+        "--output",
+        "segment48_output",
+        "--stop",
+        "48",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 10,
+      "returncode": 0
+    },
+    {
+      "label": "writer48",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_commit",
+        "--run",
+        "audit_final_replay_20261026",
+        "--source",
+        "segment48_output"
+      ],
+      "pid": 11,
+      "returncode": -9
+    },
+    {
+      "label": "segment64",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "audit_final_replay_20261026",
+        "--output",
+        "segment64_output",
+        "--stop",
+        "64",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 12,
+      "returncode": 0
+    },
+    {
+      "label": "segment96",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "audit_final_replay_20261026",
+        "--output",
+        "segment96_output",
+        "--stop",
+        "96",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 13,
+      "returncode": 0
+    },
+    {
+      "label": "writer96",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_commit",
+        "--run",
+        "audit_final_replay_20261026",
+        "--source",
+        "segment96_output"
+      ],
+      "pid": 14,
+      "returncode": -9
+    },
+    {
+      "label": "segment128",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "audit_final_replay_20261026",
+        "--output",
+        "segment128_output",
+        "--stop",
+        "128",
+        "--resume",
+        "g000096"
+      ],
+      "pid": 15,
+      "returncode": 0
+    }
+  ],
+  "previous32_unchanged": true,
+  "limitations": [
+    "same runtime CPU toy model",
+    "no power-loss/fsync durability proof",
+    "no concurrent writers",
+    "no authenticity signatures",
+    "no detection improvement",
+    "AI assisted, user competence not assessed"
+  ]
+}

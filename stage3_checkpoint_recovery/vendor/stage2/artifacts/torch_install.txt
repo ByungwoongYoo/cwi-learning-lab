@@ -1,0 +1,33 @@
+Processing <WHEEL_DOWNLOAD_DIR>/torch-2.6.0+cpu-cp312-cp312-linux_x86_64.whl
+Collecting filelock (from torch==2.6.0+cpu)
+  Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Requirement already satisfied: typing-extensions>=4.10.0 in <PREINSTALLED_SITE_PACKAGES> (from torch==2.6.0+cpu) (4.16.0)
+Collecting networkx (from torch==2.6.0+cpu)
+  Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting jinja2 (from torch==2.6.0+cpu)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.6.0+cpu)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: setuptools in <PREINSTALLED_SITE_PACKAGES> (from torch==2.6.0+cpu) (84.1.0)
+Collecting sympy==1.13.1 (from torch==2.6.0+cpu)
+  Downloading sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in <PREINSTALLED_SITE_PACKAGES> (from sympy==1.13.1->torch==2.6.0+cpu) (1.3.0)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.6.0+cpu)
+  Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 48.4 MB/s eta 0:00:00
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 27.6 MB/s eta 0:00:00
+Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Installing collected packages: sympy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+  Attempting uninstall: sympy
+    Found existing installation: sympy 1.14.0
+    Not uninstalling sympy at <PREINSTALLED_SITE_PACKAGES>, outside environment <VENV>
+    Can't uninstall 'sympy'. No files were found to uninstall.
+Successfully installed MarkupSafe-3.0.4 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 networkx-3.7 sympy-1.13.1 torch-2.6.0+cpu
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip

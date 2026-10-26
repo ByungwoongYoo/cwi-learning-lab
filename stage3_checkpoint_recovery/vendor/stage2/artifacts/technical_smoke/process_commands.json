@@ -1,0 +1,51 @@
+[
+  {
+    "argv": [
+      "<VENV>/bin/python",
+      "-m",
+      "training_lab.train",
+      "--data",
+      "<PROJECT_ROOT>/artifacts/technical_smoke/data",
+      "--out",
+      "<PROJECT_ROOT>/artifacts/technical_smoke/uninterrupted"
+    ],
+    "cwd": "<PROJECT_ROOT>",
+    "label": "uninterrupted",
+    "returncode": 0,
+    "subprocess_wall_seconds": 2.2912097950002135
+  },
+  {
+    "argv": [
+      "<VENV>/bin/python",
+      "-m",
+      "training_lab.train",
+      "--data",
+      "<PROJECT_ROOT>/artifacts/technical_smoke/data",
+      "--out",
+      "<PROJECT_ROOT>/artifacts/technical_smoke/interrupted",
+      "--stop-step",
+      "37"
+    ],
+    "cwd": "<PROJECT_ROOT>",
+    "label": "interrupted",
+    "returncode": 0,
+    "subprocess_wall_seconds": 2.067548648000411
+  },
+  {
+    "argv": [
+      "<VENV>/bin/python",
+      "-m",
+      "training_lab.train",
+      "--data",
+      "<PROJECT_ROOT>/artifacts/technical_smoke/data",
+      "--out",
+      "<PROJECT_ROOT>/artifacts/technical_smoke/resumed",
+      "--resume",
+      "<PROJECT_ROOT>/artifacts/technical_smoke/interrupted/checkpoint"
+    ],
+    "cwd": "<PROJECT_ROOT>",
+    "label": "resumed",
+    "returncode": 0,
+    "subprocess_wall_seconds": 2.127577706000011
+  }
+]

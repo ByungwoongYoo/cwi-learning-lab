@@ -1,0 +1,56 @@
+{
+  "status": "PASS_BOUNDED_SINGLE_WRITER_CPU_SCOPE",
+  "independent_adversarial_cases": 35,
+  "additional_zip_edge_cases": 2,
+  "builder_unit_tests_independently_rerun": 24,
+  "counts_overlap_not_unique_total": true,
+  "final_replay_seconds": 19.505359897000744,
+  "expected_selection": [
+    32,
+    32,
+    32,
+    32,
+    96
+  ],
+  "actual_selection": [
+    32,
+    32,
+    32,
+    32,
+    96
+  ],
+  "self_owned_sigkill_count": 3,
+  "parity": {
+    "metadata_equal": true,
+    "arrays_equal": {
+      "p0": true,
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "v0": true,
+      "v1": true,
+      "v2": true,
+      "v3": true,
+      "torch_rng": true,
+      "permutation": true
+    },
+    "passed": true
+  },
+  "predictions_equal": true,
+  "public_stage2_and_vendor_files_verified": 104,
+  "source_hashes": {
+    "recovery_lab/__main__.py": "bb6a79faebe43bd85a8d7ef981f11e58730bcbd489bf1dee7299e6c5b9282145",
+    "recovery_lab/store.py": "e0594efb73e79ef6b3afa66fa54242f8db9dae6f6c80e2334519c8be899bd067",
+    "recovery_lab/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recovery_lab/experiment.py": "c1a26c044cf685a5244f57a6b1fcc5b819ae685e56618e00ea8852edb5371612"
+  },
+  "limitations": [
+    "single writer same-runtime CPU toy",
+    "kill hooks in separate generation-publishing writer, not arbitrary training instruction",
+    "no fsync or power-loss claim",
+    "no concurrent adversarial filesystem mutations",
+    "no authenticity against content-and-hash rewriting",
+    "NPY/ZIP trailing bytes not universally rejected",
+    "no model detection improvement or user mastery assessed"
+  ]
+}

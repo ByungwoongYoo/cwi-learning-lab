@@ -1,0 +1,458 @@
+{
+  "status": "PASS_SINGLE_PROCESS_CPU_RECOVERY",
+  "run": "frozen_probe",
+  "elapsed_seconds": 19.900281637999797,
+  "parity": {
+    "metadata_equal": true,
+    "arrays_equal": {
+      "p0": true,
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "v0": true,
+      "v1": true,
+      "v2": true,
+      "v3": true,
+      "torch_rng": true,
+      "permutation": true
+    },
+    "passed": true
+  },
+  "predictions_equal": true,
+  "resumes": [
+    {
+      "target_step": 37,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 48,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 64,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-88a5df70d085416c9da0fc8cae5bc851",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 96,
+      "selected_step": 32,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-88a5df70d085416c9da0fc8cae5bc851",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": "g000064",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "target_step": 128,
+      "selected_step": 96,
+      "report": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          },
+          {
+            "name": "g000096",
+            "step": 96
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-88a5df70d085416c9da0fc8cae5bc851",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": "g000064",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": {
+          "name": "g000096",
+          "step": 96
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    }
+  ],
+  "faults": [
+    {
+      "step": 37,
+      "hook": "array_closed",
+      "observed": "array_closed",
+      "after": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "step": 48,
+      "hook": "validated",
+      "observed": "validated",
+      "after": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-88a5df70d085416c9da0fc8cae5bc851",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+            "reason": "Noncanonical or incomplete generation name"
+          }
+        ],
+        "selected": {
+          "name": "g000032",
+          "step": 32
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "step": 96,
+      "hook": "published",
+      "observed": "published",
+      "after": {
+        "valid": [
+          {
+            "name": "g000032",
+            "step": 32
+          },
+          {
+            "name": "g000096",
+            "step": 96
+          }
+        ],
+        "invalid": [
+          {
+            "name": ".pending-88a5df70d085416c9da0fc8cae5bc851",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+            "reason": "Noncanonical or incomplete generation name"
+          },
+          {
+            "name": "g000064",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": {
+          "name": "g000096",
+          "step": 96
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    }
+  ],
+  "final_store": {
+    "valid": [
+      {
+        "name": "g000032",
+        "step": 32
+      },
+      {
+        "name": "g000096",
+        "step": 96
+      },
+      {
+        "name": "g000128",
+        "step": 128
+      }
+    ],
+    "invalid": [
+      {
+        "name": ".pending-88a5df70d085416c9da0fc8cae5bc851",
+        "reason": "Noncanonical or incomplete generation name"
+      },
+      {
+        "name": ".pending-88e1647ea54047f48f2cc1b3ce0e7022",
+        "reason": "Noncanonical or incomplete generation name"
+      },
+      {
+        "name": "g000064",
+        "reason": "FormatError: Archive SHA256 mismatch"
+      }
+    ],
+    "selected": {
+      "name": "g000128",
+      "step": 128
+    },
+    "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+  },
+  "commands": [
+    {
+      "label": "reference",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "frozen_probe",
+        "--output",
+        "reference_output",
+        "--stop",
+        "128"
+      ],
+      "pid": 41,
+      "returncode": 0
+    },
+    {
+      "label": "first32",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "frozen_probe",
+        "--output",
+        "first32_output",
+        "--stop",
+        "32"
+      ],
+      "pid": 42,
+      "returncode": 0
+    },
+    {
+      "label": "segment37",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "frozen_probe",
+        "--output",
+        "segment37_output",
+        "--stop",
+        "37",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 43,
+      "returncode": 0
+    },
+    {
+      "label": "writer37",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_commit",
+        "--run",
+        "frozen_probe",
+        "--source",
+        "segment37_output"
+      ],
+      "pid": 44,
+      "returncode": -9
+    },
+    {
+      "label": "segment48",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "frozen_probe",
+        "--output",
+        "segment48_output",
+        "--stop",
+        "48",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 45,
+      "returncode": 0
+    },
+    {
+      "label": "writer48",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_commit",
+        "--run",
+        "frozen_probe",
+        "--source",
+        "segment48_output"
+      ],
+      "pid": 46,
+      "returncode": -9
+    },
+    {
+      "label": "segment64",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "frozen_probe",
+        "--output",
+        "segment64_output",
+        "--stop",
+        "64",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 47,
+      "returncode": 0
+    },
+    {
+      "label": "segment96",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "frozen_probe",
+        "--output",
+        "segment96_output",
+        "--stop",
+        "96",
+        "--resume",
+        "g000032"
+      ],
+      "pid": 48,
+      "returncode": 0
+    },
+    {
+      "label": "writer96",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_commit",
+        "--run",
+        "frozen_probe",
+        "--source",
+        "segment96_output"
+      ],
+      "pid": 49,
+      "returncode": -9
+    },
+    {
+      "label": "segment128",
+      "argv": [
+        "-m",
+        "recovery_lab",
+        "_train",
+        "--run",
+        "frozen_probe",
+        "--output",
+        "segment128_output",
+        "--stop",
+        "128",
+        "--resume",
+        "g000096"
+      ],
+      "pid": 50,
+      "returncode": 0
+    }
+  ],
+  "previous32_unchanged": true,
+  "limitations": [
+    "same runtime CPU toy model",
+    "no power-loss/fsync durability proof",
+    "no concurrent writers",
+    "no authenticity signatures",
+    "no detection improvement",
+    "AI assisted, user competence not assessed"
+  ]
+}

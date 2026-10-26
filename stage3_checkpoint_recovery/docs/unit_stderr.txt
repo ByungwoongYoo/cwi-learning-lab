@@ -1,0 +1,29 @@
+test_checkpoint_symlink (test_store.StoreTests.test_checkpoint_symlink) ... ok
+test_corrupt_archive (test_store.StoreTests.test_corrupt_archive) ... ok
+test_data_symlink (test_store.StoreTests.test_data_symlink) ... ok
+test_dry_run_preserves_bytes (test_store.StoreTests.test_dry_run_preserves_bytes) ... ok
+test_duplicate_json_key (test_store.StoreTests.test_duplicate_json_key) ... ok
+test_duplicate_never_overwrites (test_store.StoreTests.test_duplicate_never_overwrites) ... ok
+test_empty_fails_closed (test_store.StoreTests.test_empty_fails_closed) ... ok
+test_generation_count_bound (test_store.StoreTests.test_generation_count_bound) ... ok
+test_generations_symlink (test_store.StoreTests.test_generations_symlink) ... ok
+test_good_commit_and_select (test_store.StoreTests.test_good_commit_and_select) ... ok
+test_hardlink (test_store.StoreTests.test_hardlink) ... ok
+test_member_symlink (test_store.StoreTests.test_member_symlink) ... ok
+test_nan_json (test_store.StoreTests.test_nan_json) ... ok
+test_noncanonical_alias_not_selected (test_store.StoreTests.test_noncanonical_alias_not_selected) ... ok
+test_outside_path (test_store.StoreTests.test_outside_path) ... ok
+test_oversized_archive (test_store.StoreTests.test_oversized_archive) ... ok
+test_oversized_manifest (test_store.StoreTests.test_oversized_manifest) ... ok
+test_partial_manifest (test_store.StoreTests.test_partial_manifest) ... ok
+test_pending_not_selected (test_store.StoreTests.test_pending_not_selected) ... ok
+test_run_symlink (test_store.StoreTests.test_run_symlink) ... ok
+test_schema_boolean (test_store.StoreTests.test_schema_boolean) ... ok
+test_traversal_names (test_store.StoreTests.test_traversal_names) ... ok
+test_unexpected_member (test_store.StoreTests.test_unexpected_member) ... ok
+test_wrong_step_name (test_store.StoreTests.test_wrong_step_name) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.739s
+
+OK

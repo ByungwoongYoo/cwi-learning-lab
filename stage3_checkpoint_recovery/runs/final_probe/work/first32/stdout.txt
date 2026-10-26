@@ -1,0 +1,40 @@
+{
+  "status": "TECHNICAL_TRAINING_SMOKE_ONLY",
+  "metrics_scope": "8192 sampled training pixels, RESUBSTITUTION; not held-out/generalization",
+  "source_examples": 2,
+  "train_samples": 8192,
+  "positive_labels": 1,
+  "architecture": [
+    7,
+    16,
+    1
+  ],
+  "parameter_count": 145,
+  "device": "cpu",
+  "runtime": {
+    "torch": "2.6.0+cpu",
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "pid": 41,
+  "resumed_from_step": 0,
+  "optimizer_steps_this_process": 32,
+  "optimizer_steps_total": 32,
+  "initial_train_loss": 0.8330589737835608,
+  "final_train_loss": 0.03868876601439365,
+  "all_training_losses_finite": true,
+  "train_confusion": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 1,
+    "TN": 8191
+  },
+  "training_wall_seconds": 0.014020278000316466,
+  "training_process_cpu_seconds": 0.014006497000000007,
+  "process_peak_rss_kib": 287496,
+  "run_wall_seconds": 0.5554416640006821,
+  "run_process_cpu_seconds": 0.55491157,
+  "prediction_sha256": "53ead369886770d31eecd87c89d4bc796aa5fc86b6ef09b6ef3e312fad18f8cc",
+  "authorship": "AI_ASSISTED",
+  "user_competency": "NOT_ASSESSED"
+}

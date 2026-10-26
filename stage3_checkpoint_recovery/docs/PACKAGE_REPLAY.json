@@ -1,0 +1,32 @@
+{
+  "status": "PASS_EXTRACTED_PACKAGE_REPLAY",
+  "unit_tests": 24,
+  "source_manifest_files_verified": 260,
+  "full_replay_seconds": 19.475268222000523,
+  "parity": {
+    "metadata_equal": true,
+    "arrays_equal": {
+      "p0": true,
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "v0": true,
+      "v1": true,
+      "v2": true,
+      "v3": true,
+      "torch_rng": true,
+      "permutation": true
+    },
+    "passed": true
+  },
+  "predictions_equal": true,
+  "selection": [
+    32,
+    32,
+    32,
+    32,
+    96
+  ],
+  "same_cpu_environment": true,
+  "different_extracted_directory": true
+}

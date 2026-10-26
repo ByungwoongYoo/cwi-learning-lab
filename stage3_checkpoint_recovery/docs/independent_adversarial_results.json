@@ -1,0 +1,525 @@
+{
+  "cases": [
+    {
+      "case": "meta_schema_version_True",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Checkpoint schema/version mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_schema_version_2",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Checkpoint schema/version mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_progress_{'step': 37, 'epoch'",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Progress consistency mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_progress_{'step': True, 'epoc",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Invalid progress"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_config_sha256_00000000000000000000",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Checkpoint binding mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_data_sha256_00000000000000000000",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Checkpoint binding mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_sample_indices_sha256_00000000000000000000",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Checkpoint binding mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_runtime_{}",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Runtime/optimizer mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_optimizer_{}",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Runtime/optimizer mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_losses_[1, 1, 1, 1, 1, 1, 1",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Invalid losses"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_initial_loss_-1",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Invalid initial loss"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_sampler_rng_{}",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Unexpected schema keys"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "meta_archive_sha256_00000000000000000000",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "extra_manifest_key",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Unexpected schema keys"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "duplicate_json",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Invalid JSON"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "nonfinite_json",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Invalid JSON"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "array_shape",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Array shape/dtype mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "array_dtype",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Array shape/dtype mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "array_object",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Array shape/dtype mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "array_nan",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Nonfinite array"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "array_permutation",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Invalid permutation"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "array_rng",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Invalid RNG payload"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "extra_npz_member",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Archive member count mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "zip_path",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Unexpected archive member"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "zip_bomb",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Decoded archive too large"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "zip_duplicate",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "FormatError: Archive member count mismatch"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "manifest_symlink",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "StoreError: Symbolic link forbidden"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "state_symlink",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "StoreError: Symbolic link forbidden"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "extra_file",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "StoreError: Unexpected checkpoint members"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "missing_state",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000037",
+            "reason": "StoreError: Unexpected checkpoint members"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "filename_step_mismatch",
+      "passed": true,
+      "detail": {
+        "valid": [],
+        "invalid": [
+          {
+            "name": "g000128",
+            "reason": "StoreError: Generation and saved step differ"
+          }
+        ],
+        "selected": null,
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "validated_step_over_mtime",
+      "passed": true,
+      "detail": {
+        "valid": [
+          {
+            "name": "g000037",
+            "step": 37
+          },
+          {
+            "name": "g000128",
+            "step": 128
+          }
+        ],
+        "invalid": [],
+        "selected": {
+          "name": "g000128",
+          "step": 128
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "corrupt_latest_falls_back",
+      "passed": true,
+      "detail": {
+        "valid": [
+          {
+            "name": "g000037",
+            "step": 37
+          }
+        ],
+        "invalid": [
+          {
+            "name": "g000128",
+            "reason": "FormatError: Archive SHA256 mismatch"
+          }
+        ],
+        "selected": {
+          "name": "g000037",
+          "step": 37
+        },
+        "cleanup": "DRY_RUN_ONLY_NO_FILES_DELETED"
+      }
+    },
+    {
+      "case": "all_invalid_fails_closed",
+      "passed": true
+    },
+    {
+      "case": "same_step_conflict_no_overwrite",
+      "passed": true
+    }
+  ],
+  "count": 35,
+  "passed": true,
+  "elapsed": 0.6389958430008846
+}
